@@ -1,0 +1,4 @@
+EXPORT_CLASS UI_LCAnnouncement:UI_LogicClass
+void_F_DoAgree
+void_F_DoDisagree
+EXPORT_END

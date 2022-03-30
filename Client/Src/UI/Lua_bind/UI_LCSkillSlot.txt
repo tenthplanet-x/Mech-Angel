@@ -1,0 +1,5 @@
+EXPORT_CLASS UI_LCSkillSlot:UI_LogicClass
+void_F_ActiveSkill
+int_F_DoSlotMove
+int_F_ShowTooltip
+EXPORT_END

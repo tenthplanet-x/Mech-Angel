@@ -1,0 +1,3 @@
+EXPORT_CLASS UI_LCLogoutDialog:UI_LogicClass
+void_F_DoExitGame
+EXPORT_END

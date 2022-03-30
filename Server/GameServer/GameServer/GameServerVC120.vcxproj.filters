@@ -1,0 +1,1478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{04e952f7-6d15-4cb3-a9fa-7fc9eba439d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{1884669b-90f3-40b3-a9ce-78b69939551c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{0579814d-35a5-4567-bd19-05153d89226c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Actor">
+      <UniqueIdentifier>{996e0626-d028-41f2-9ace-252b1c232b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\World">
+      <UniqueIdentifier>{43850304-b594-41dc-b9c1-84e7946d9fb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Item">
+      <UniqueIdentifier>{aee28c52-3b98-4938-8e77-68b1893287b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Shop">
+      <UniqueIdentifier>{b0232fe6-d5e6-451c-b9fc-df59dc539feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\PlayerGroup">
+      <UniqueIdentifier>{f1197f41-40e1-4167-aa43-7f660f99a118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Chat">
+      <UniqueIdentifier>{cce99fdb-0caa-4972-a10c-424098499ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\PVP&amp;PVE">
+      <UniqueIdentifier>{8a8b9368-9445-4d86-acd8-e7bdc10e01d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Task">
+      <UniqueIdentifier>{c8833f38-6451-44f2-8d9c-0459448a8f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Event">
+      <UniqueIdentifier>{96515b22-9215-4b65-bcdc-37cc42cca1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Operation">
+      <UniqueIdentifier>{d68f7e37-dcc6-4d83-b83c-33fd398a25fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Operation\NPCInteration">
+      <UniqueIdentifier>{4456b089-6bf3-4835-bd55-cdbd1aee726a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MapLogic">
+      <UniqueIdentifier>{86e2b038-91c6-43a1-89ec-22eada5da474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\SafeSystem">
+      <UniqueIdentifier>{0ef76722-5999-40d9-b605-012061c8f1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Rumor">
+      <UniqueIdentifier>{a90887ce-109d-4b8e-b4b6-e1f4f514d620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\PlaceHolder">
+      <UniqueIdentifier>{0a883900-0dd8-46e5-8cc5-fab0f5f96bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Map">
+      <UniqueIdentifier>{f8905b20-c1c8-4c56-8696-28fbc9e4a9c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{5bf3bec4-94c3-41fc-a443-d412d9cec65b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{3bba4406-d046-4ec4-8143-456a9bdea123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine">
+      <UniqueIdentifier>{f175609e-972d-41f9-99e3-9c8074ae6070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine\State">
+      <UniqueIdentifier>{a80aa492-b390-46f9-841e-56b98d64e7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine\Controller">
+      <UniqueIdentifier>{6ca697d7-1f2f-46c9-8ada-da75b2f37607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Path">
+      <UniqueIdentifier>{037cd491-b194-42db-b3bb-f59af1e42f2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transaction">
+      <UniqueIdentifier>{8cc168ef-9cbd-4e77-a6bd-4198171fe730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{bc65fbc5-829c-4612-a9cc-3a1fa173cb30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{087c63b7-f333-42be-862f-2a00ec9c7ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageChannel">
+      <UniqueIdentifier>{99790675-a2e7-4b01-b9cd-7b0f296a3eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Transcription">
+      <UniqueIdentifier>{08069e93-0ffe-4123-bae9-a6e21a7215e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameStory">
+      <UniqueIdentifier>{966a8625-7ba9-48df-85c7-5606fc39b811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arena">
+      <UniqueIdentifier>{f6d6ce19-ef47-4350-80b9-99174efb9e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewBee">
+      <UniqueIdentifier>{fea085e0-7cfa-489f-86d4-bd553916bf6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VIP">
+      <UniqueIdentifier>{0e218f60-b5e3-4699-aee3-f040362eaba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CSV">
+      <UniqueIdentifier>{3596ad86-1cb1-4e8a-95af-bce2b5c750b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{85ccbb54-cca0-465a-b40d-df42db183d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rank">
+      <UniqueIdentifier>{60ed32f3-72c7-4651-86fa-7624319d6f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Play">
+      <UniqueIdentifier>{98fd82ac-431a-4ce0-ae1e-88cd81a9a210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\MysticalShop">
+      <UniqueIdentifier>{b9328624-aa0a-41dd-8554-fd8f083d4815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Alliance">
+      <UniqueIdentifier>{0926bcd0-83df-45f4-85b0-d0ecd46562dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Guild">
+      <UniqueIdentifier>{da2788e4-60df-4ec3-9d60-e23607262c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{715cd291-74f9-4cb2-b1ba-0eb0034ac550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\SecretTreasure">
+      <UniqueIdentifier>{a75fb16e-a9ce-4d73-8184-066de6ba3130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TextFilterChannel">
+      <UniqueIdentifier>{1ace7082-c3fd-43c4-9fcf-124931df9927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\Asset">
+      <UniqueIdentifier>{060f3c92-4ad5-4955-862e-b947de39840f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DailyDataReport">
+      <UniqueIdentifier>{5f462d08-6da4-4297-854c-1799490ce9ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\Data">
+      <UniqueIdentifier>{3f94d168-9ba8-4d25-88d4-083aa23264bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity\Detail">
+      <UniqueIdentifier>{a9a14f0b-dd23-418a-b468-0e6313306b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HttpHandler">
+      <UniqueIdentifier>{ccc1cbfa-daf3-4a10-b2d4-b1c41502219d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsyHttpClient">
+      <UniqueIdentifier>{68004c95-c7a1-41cd-95d9-7accf68be168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AsyHttpClient\HttpApi">
+      <UniqueIdentifier>{f028fa1c-c01b-4bd6-8cea-c2c4dbfbe30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceAlert">
+      <UniqueIdentifier>{b84cbef6-ff5a-4236-998c-1717b8426913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FacebookReward">
+      <UniqueIdentifier>{e2d2e61a-3620-49be-a373-815728fc0db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdPlatformHttpReport">
+      <UniqueIdentifier>{88ac4229-3e23-4688-84a0-478b4cd64ff5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\ExportRobot.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameServerApp.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameServerManager.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Main.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromChatServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_ArenaProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_AssistProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_AuctionProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_ChatProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_CurrencyTradeProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_DebugProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_DuelProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_ForbidProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_FriendProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_GameProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_GatewayProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_GroupProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_GuildProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_ItemProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_LoginProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_MailProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_NPCShopProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_PKProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_PlaceHolderProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_ProfileProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_QuanThanhTemple.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_SearchPlayerProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_ShopCityProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_SkillProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_SyncProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_TaskProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_TradeProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_VehicleProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromDBServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromFriendServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromGameServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromGroupServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromGuildServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromLoginServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromMailServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromTradeServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_PacketHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerLogicManager.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerNPC.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerNPCManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerNPCOwnerList.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayer.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayer_AntiWallow.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayer_Item.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayer_SaveLoad.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayer_Vehicle_Arrow.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayerEnterLeaveManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayerManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayerMonitor.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayerQueueManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerWorldManager.cpp">
+      <Filter>Logic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerItem.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerItemFactory.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPackEntryFactory.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayerGroup.cpp">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlayerGroupManager.cpp">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ChatMessageManager.cpp">
+      <Filter>Logic\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerDuelFlow.cpp">
+      <Filter>Logic\PVP&amp;PVE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerDuelFlowMgr.cpp">
+      <Filter>Logic\PVP&amp;PVE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMainTask.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerTask.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerTaskManager.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerTaskMap.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerGameEventManager.cpp">
+      <Filter>Logic\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerActorOperationManager.cpp">
+      <Filter>Logic\Operation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerNPCInteractionManager.cpp">
+      <Filter>Logic\Operation\NPCInteration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMapLogic_ActorManger.cpp">
+      <Filter>Logic\MapLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMapLogic_MonsterConfig.cpp">
+      <Filter>Logic\MapLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMapLogicBase.cpp">
+      <Filter>Logic\MapLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMapLogicFactory.cpp">
+      <Filter>Logic\MapLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerCaptchaManager.cpp">
+      <Filter>Logic\SafeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerSafeSystemAsset.cpp">
+      <Filter>Logic\SafeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_Rumor.cpp">
+      <Filter>Logic\Rumor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_RumorManager.cpp">
+      <Filter>Logic\Rumor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerItemFlopManager.cpp">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlaceHolder.cpp">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerPlaceHolderManager.cpp">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerRewardManager.cpp">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMap.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMap_Trigger.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerSector.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ServerDebugInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ServerScriptInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ServerScriptInterfaceHeader.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ServerSkillInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CSV\ConfigManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\oss_define.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\oss_log.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\redispp.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\syslog_port.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\TM_ServerTimeManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ActivationCode.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_GameServerLogManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_GameServerPackFilter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_GameServerProfile.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_PathFindHelp.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_RedisChannel.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ServerCommandParser.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ServerHelper.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerControllerFactory.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerStateFactory.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\PlayerStateAction.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_BORN.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_CHASE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_DIZZ.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_FOLLOW.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_IDLE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_RETREAT.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_SLEEP.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_TALK.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCState_WANDER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_BORN.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_CHASE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_DIZZ.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_FOLLOW.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_RUN.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_SLEEP.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_STAND.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_TALK.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerState_WANDER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerNPCBaseController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ServerPlayerController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Path\PF_ServerPathManager.cpp">
+      <Filter>Path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_CreateGuildTran.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_GetItemAffixTran.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_PayMailTran.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_TranAuctionBuyTran.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_TranAuctionSellTran.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_TranBase.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_TranDonateGuildMaterials.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_TranManager.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_TranPool.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_WriteMailTran.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Skill\SK_ServerSkillEventManager.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Text\TT_TextManager.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_BaseDataDirtyFlag.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_BroadCastDataDirtyFlag.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_BroadCastMessageSender.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_DataDirtyFlag.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_Message2ClientManager.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_MessageChannel.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_MessagePackageHelp.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_PlayerFovVector.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_UniCastDataDirtyFlag.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\MessageChannel\MC_UniCastMessageSender.cpp">
+      <Filter>MessageChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_CrossRealmRaidManager.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_Server_TranscriptionDungeon_Config.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_Server_War_Config.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_Place.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_TranscriptionRuleManger.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerWarManager.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStory_Escort.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStory_Manager.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStory_Transcript.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStory_WildBoss.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStoryBase.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_StoryLogic_Manager.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Arena\LC_Dule_Config.cpp">
+      <Filter>Arena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Arena\LC_Dule_Manager.cpp">
+      <Filter>Arena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Newbee\LC_ServerMapLogic_NewBee.cpp">
+      <Filter>NewBee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\VIP\LC_VIPManager.cpp">
+      <Filter>VIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CSV\CF_ServerCSVManager.cpp">
+      <Filter>CSV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CSV\CSV_Server_Helper.cpp">
+      <Filter>CSV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerChestCSVManager.cpp">
+      <Filter>CSV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Helper.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_InputMessageControlTable.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_MessageRecorder.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_ServerSession.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Rank\LC_RankManager.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Rank\LC_ShotActivity.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_AutoSpawnPlay.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_BatchPlay.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_PlayManager.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_SoloDulePlay.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_WarPlay.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_GlobalKeyManager.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromCrossRealm.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerMysticalShop.cpp">
+      <Filter>Logic\MysticalShop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerShopAsset.cpp">
+      <Filter>Logic\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromFrontierAlliance.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerAllianceManager.cpp">
+      <Filter>Logic\Alliance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_AllianceProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerTools.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_LogicArea.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerGuildWarAsset.cpp">
+      <Filter>Logic\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ServerGuildManager.cpp">
+      <Filter>Logic\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ActivitySchedule.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_SecretTreasure.cpp">
+      <Filter>Activity\SecretTreasure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromClient_AcitivityProtocol.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\TextFilterChannel\LC_TextFilterChannel.cpp">
+      <Filter>TextFilterChannel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transaction\TS_GMRequest.cpp">
+      <Filter>Transaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\publish_define.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_Subordinate.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\DailyDataReport\LC_DailyDataReport.cpp">
+      <Filter>DailyDataReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ActivityAsset.cpp">
+      <Filter>Activity\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ChargeProfit.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ContinuousCharge.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ActivityDataManager.cpp">
+      <Filter>Activity\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ConsumeProfit.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_Shop.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\HttpHandler\LC_HttpHandler.cpp">
+      <Filter>HttpHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_Login.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AsyHttpClient\HttpApi\HTTPClient.cpp">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AsyHttpClient\HttpApi\HTTPClientAuth.cpp">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AsyHttpClient\HttpApi\HTTPClientString.cpp">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AsyHttpClient\HttpApi\HTTPClientWrapper.cpp">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AsyHttpClient\AH_AsyHttpClient.cpp">
+      <Filter>AsyHttpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_Shot.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\ResourceAlert\LC_ResourceAlert.cpp">
+      <Filter>ResourceAlert</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\FacebookReward\LC_FacebookReward.cpp">
+      <Filter>FacebookReward</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AsyHttpClient\LC_ThirdPlatformReport.cpp">
+      <Filter>ThirdPlatformHttpReport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ConsumeRebates.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ChargeInterval.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Arena\LC_Arena_Manager.cpp">
+      <Filter>Arena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_ArenaPlay.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromGlobalServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_SignIn.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ChargeRebates.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStory_FactionWar.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_OfferAReward.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_Monopoly.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_SnowMan.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_ClimbTower.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_SpringTree.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_RefreshShop.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Activity\ACT_SubordinateConsume.cpp">
+      <Filter>Activity\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\GameStory\LC_GameStory_GuildLadderWar.cpp">
+      <Filter>GameStory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_GuildLadderManager.cpp">
+      <Filter>Transcription</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Transcription\LC_ServerMapLogic_GuildLadderPlay.cpp">
+      <Filter>Play</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\ExportRobot.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameServerApp.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameServerManager.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Handler\HL_PacketHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerLogicManager.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerNPC.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerNPCManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerNPCOwnerList.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayer.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayerEnterLeaveManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayerManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayerMonitor.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayerQueueManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerWorldManager.h">
+      <Filter>Logic\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerItem.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerItemFactory.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPackEntryFactory.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayerGroup.h">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlayerGroupManager.h">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ChatMessageManager.h">
+      <Filter>Logic\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerDuelFlow.h">
+      <Filter>Logic\PVP&amp;PVE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerDuelFlowMgr.h">
+      <Filter>Logic\PVP&amp;PVE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMainTask.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerTask.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerTaskManager.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerTaskMap.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerGameEventManager.h">
+      <Filter>Logic\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerActorOperationManager.h">
+      <Filter>Logic\Operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerNPCInteractionManager.h">
+      <Filter>Logic\Operation\NPCInteration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMapLogic_ActorManger.h">
+      <Filter>Logic\MapLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMapLogic_MonsterConfig.h">
+      <Filter>Logic\MapLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMapLogicBase.h">
+      <Filter>Logic\MapLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMapLogicFactory.h">
+      <Filter>Logic\MapLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerCaptchaManager.h">
+      <Filter>Logic\SafeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerSafeSystemAsset.h">
+      <Filter>Logic\SafeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_Rumor.h">
+      <Filter>Logic\Rumor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_RumorManager.h">
+      <Filter>Logic\Rumor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerItemFlopManager.h">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlaceHolder.h">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerPlaceHolderManager.h">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerRewardManager.h">
+      <Filter>Logic\PlaceHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMap.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMap_Trigger.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerSector.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\H_ServerScriptInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerLuaFunction.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ServerDebugInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ServerScriptInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ServerScriptInterfaceHeader.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ServerSkillInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\ServerLogicScriptPCH.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\CSV\ConfigManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\oss_define.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\oss_log.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\redispp.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\syslog_port.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\TM_ServerTimeManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ActivationCode.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_GameServerLogManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_GameServerPackFilter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_GameServerProfile.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_PathFindHelp.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_Redis.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_RedisChannel.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ServerCommandParser.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ServerHelper.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerControllerFactory.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerStateFactory.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\PlayerStateAction.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_BORN.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_CHASE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_DIZZ.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_FOLLOW.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_IDLE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_RETREAT.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_SLEEP.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_TALK.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCState_WANDER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_BORN.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_CHASE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_DIZZ.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_FOLLOW.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_RUN.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_SLEEP.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_STAND.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_TALK.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerState_WANDER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerNPCBaseController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ServerPlayerController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Path\PF_ServerPathManager.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\LC_SequenceManager.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_CreateGuildTran.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_GetItemAffixTran.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_PayMailTran.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranAuctionBuyTran.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranAuctionSellTran.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranBase.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranDonateGuildMaterials.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranManager.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranPool.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_TranType.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_WriteMailTran.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Skill\SK_ServerSkillEventManager.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Text\TT_TextManager.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_BaseDataDirtyFlag.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_BroadCastDataDirtyFlag.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_BroadCastMessageSender.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_DataDirtyFlag.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_IMessageSender.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_Message2ClientManager.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_MessageChannel.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_MessagePackageHelp.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_PlayerFovVector.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_UniCastDataDirtyFlag.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\MessageChannel\MC_UniCastMessageSender.h">
+      <Filter>MessageChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_CrossRealmRaidManager.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_Server_TranscriptionDungeon_Config.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_Server_War_Config.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_Place.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_TranscriptionRuleManger.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerWarManager.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStory_Escort.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStory_Manager.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStory_Transcript.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStory_WildBoss.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStoryBase.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStoryCommon.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_StoryLogic_Manager.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Arena\LC_Dule_Config.h">
+      <Filter>Arena</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Arena\LC_Dule_Manager.h">
+      <Filter>Arena</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Newbee\LC_ServerMapLogic_NewBee.h">
+      <Filter>NewBee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\VIP\LC_VIPManager.h">
+      <Filter>VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\CSV\CF_ServerCSVManager.h">
+      <Filter>CSV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\CSV\CSV_Server_Helper.h">
+      <Filter>CSV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerChestCSVManager.h">
+      <Filter>CSV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Helper.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_InputMessageControlTable.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_MessageRecorder.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_ServerSession.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Rank\LC_RankManager.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Rank\LC_ShotAcitivity.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_AutoSpawnPlay.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_BatchPlay.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_PlayBase.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_PlayManager.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_SoloDulePlay.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_WarPlay.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_GlobalKeyManager.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerMysticalShop.h">
+      <Filter>Logic\MysticalShop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Common\Include\GuildCommDef.h" />
+    <ClInclude Include="..\Src\Logic\LC_ServerShopAsset.h">
+      <Filter>Logic\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerAllianceManager.h">
+      <Filter>Logic\Alliance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerTools.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_LogicArea.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerGuildWarAsset.h">
+      <Filter>Logic\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ServerGuildManager.h">
+      <Filter>Logic\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ActivitySchedule.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_SecretTreasure.h">
+      <Filter>Activity\SecretTreasure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\TextFilterChannel\LC_TextFilterChannel.h">
+      <Filter>TextFilterChannel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transaction\TS_GMRequest.h">
+      <Filter>Transaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\publish_define.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_Subordinate.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\DailyDataReport\LC_DailyDataReport.h">
+      <Filter>DailyDataReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ActivityAsset.h">
+      <Filter>Activity\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ChargeProfit.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ContinuousCharge.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ActivityDataManager.h">
+      <Filter>Activity\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ConsumeProfit.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_Shop.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\HttpHandler\LC_HttpHandler.h">
+      <Filter>HttpHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_Login.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\HttpApi\HTTPClient.h">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\HttpApi\HTTPClientAuth.h">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\HttpApi\HTTPClientCommon.h">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\HttpApi\HTTPClientString.h">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\HttpApi\HTTPClientWrapper.h">
+      <Filter>AsyHttpClient\HttpApi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\AH_AsyHttpClient.h">
+      <Filter>AsyHttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_Shot.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ResourceAlert\LC_ResourceAlert.h">
+      <Filter>ResourceAlert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\FacebookReward\LC_FacebookReward.h">
+      <Filter>FacebookReward</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AsyHttpClient\LC_ThirdPlatformReport.h">
+      <Filter>ThirdPlatformHttpReport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ConsumeRebates.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ChargeInterval.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Arena\LC_Arena_Manager.h">
+      <Filter>Arena</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_ArenaPlay.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_SignIn.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ChargeRebates.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStory_FactionWar.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_OfferAReward.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_Monopoly.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_SnowMan.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_ClimbTower.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_SpringTree.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_RefreshShop.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Activity\ACT_SubordinateConsume.h">
+      <Filter>Activity\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\GameStory\LC_GameStory_GuildLadderWar.h">
+      <Filter>GameStory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_GuildLadderManager.h">
+      <Filter>Transcription</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Transcription\LC_ServerMapLogic_GuildLadderPlay.h">
+      <Filter>Play</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt">
+      <Filter>Utility</Filter>
+    </None>
+    <None Include="..\Src\Transaction\TS_TranBase.inl">
+      <Filter>Transaction</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Src\Script\SC_ServerScriptInterface.txt">
+      <Filter>Script</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

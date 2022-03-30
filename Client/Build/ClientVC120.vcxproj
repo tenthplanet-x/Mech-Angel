@@ -1,0 +1,968 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MapViewer_Debug|Win32">
+      <Configuration>MapViewer_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MapViewer_Release|Win32">
+      <Configuration>MapViewer_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MapViewer_Shipping|Win32">
+      <Configuration>MapViewer_Shipping</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ShippingDLLMT|Win32">
+      <Configuration>ShippingDLLMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Client</ProjectName>
+    <ProjectGuid>{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>..\..\..\bin\vc_temp\v8_$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>..\..\..\bin\vc_temp\v8_$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>..\..\..\bin\vc_temp\v8_$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>..\..\..\bin\vc_temp\v8_$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>..\..\..\bin\vc_temp\v120_$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+    <TargetName>JZClient</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>..\..\..\bin\vc_temp\v8_$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm400  /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Dependency;..\..\..\Dependency\fbx\include;..\..\..\Dependency\Miles\;..\Src\;..\Src\Base;..\Src\CSV;..\Src\Data;..\Src\BackLoading;..\Src\Script;..\Src\Camera;..\Src\Object;..\Src\Message;..\Src\Timer;..\Src\Input;..\Src\Scene;..\Src\Render;..\Src\Path;..\Src\UI;..\Src\UI\Lua_bind;..\Src\FX;..\Src\Actor;..\Src\InteractModel;..\Src\Logic;..\Src\Stage;..\Src\StateMachine;..\Src\NetWork;..\Src\Debug;..\Src\Session;..\Src\Handler;..\Src\Utility;..\Src\Item;..\Src\UIEffect;..\Src\Text;..\Src\AudioSystem;..\Src\Skill;..\Src\ToolTip;..\..\..\Common\Include;..\..\..\Common\Protocol\Include\cs;..\..\..\Common\Protocol\Include\com;..\..\..\Common\Protocol\Include\ss;..\..\..\Common\Protocol\Include\common;..\..\..\Common\Protocol\Include;..\..\..\Common\Engine\Include;..\..\..\Common\Utility\Include;..\..\..\Common\NetWork\Include;..\..\..\Common\UISystem\Include;..\..\..\Common\GameLogic\Include;..\..\..\Common\GameLogic\Src;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Include;..\..\..\Dependency\FastDelegate;..\..\..\Dependency\CxImage\CxImage;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\IME\include;..\..\..\Dependency\DXSDK_9_33\Include;..\..\..\Dependency\lua-5.1.4\src;..\..\..\Dependency\tinyxml_2_5_3\include;..\..\..\Dependency\PathEngine_5_16\;..\..\..\Dependency\PhysX2.6.4\Include;..\..\..\Dependency\FreeType\;..\..\..\Dependency\PME\src;..\..\..\Dependency\zlib;..\..\..\Dependency\tbb30_018oss\include;..\..\..\Dependency\Sqlite3\src;..\..\..\Common\UISystem\Src;..\..\..\Dependency\protobuf\include;..\..\..\Common\WinVideo\Include;..\..\..\Dependency\boost-1_57\include\boost-1_57\;..\..\..\Common\Utility\Win;..\..\..\Common\GameLogic\Win;..\..\..\Dependency\rapidjson\include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USE_SERVER;WIN32;_WINDOWS;_DEBUG;_DX9;T6_CLIENT;NIDEBUG;MSG_TO_GAME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Lzma_d.lib;Engine_Client_d.lib;UISystem_Client_d.lib;zlibd.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)JZClient_D.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependency\fbx\lib;..\..\..\Common\Utility\Lib\vc8;..\..\..\Common\Engine\Lib;..\..\..\Common\Protocol\Lib;..\..\..\Common\GameLogic\Lib;..\..\..\Common\NetWork\Lib;..\..\..\Dependency\CxImage\Lib\Debug;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\DXSDK_9_33\Lib\x86;..\..\..\Dependency\tinyxml_2_5_3\lib;..\..\..\Dependency\PhysX2.6.4\Lib;..\..\..\Dependency\FreeType\Lib;..\..\..\Dependency\PME\lib;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Lib\VC80\DebugLib;..\..\..\Dependency\Miles;..\..\..\Dependency\zlib\lib;..\..\..\Dependency\tbb30_018oss\lib\ia32\vc8;..\..\..\Dependency\Lzma\lib;..\..\..\Dependency\PerfSDK;..\..\..\Dependency\HtmlLayout\lib;..\..\..\Dependency\Sqlite3\lib;..\..\..\Dependency\protobuf\lib\debug\;..\..\..\Common\WinVideo\lib;..\..\..\Common\UISystem\lib;..\..\..\Dependency\boost-1_57\lib\;..\..\..\Dependency\Lua-5.1.4\lib;..\..\..\Tool\Downloader\bin;C:\Program Files (x86)\Visual Leak Detector\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Dependency\fbx\include;..\Src\;..\Src\Base;..\Src\CSV;..\Src\Data;..\Src\BackLoading;..\Src\Script;..\Src\Camera;..\Src\Object;..\Src\Message;..\Src\Timer;..\Src\Input;..\Src\Scene;..\Src\Render;..\Src\Path;..\Src\UI;..\Src\UISys;..\Src\UI\Lua_bind;..\Src\FX;..\Src\Actor;..\Src\InteractModel;..\Src\Logic;..\Src\Stage;..\Src\StateMachine;..\Src\NetWork;..\Src\Debug;..\Src\Session;..\Src\Handler;..\Src\Utility;..\Src\Item;..\Src\UIEffect;..\Src\Text;..\Src\AudioSystem;..\Src\Skill;..\..\..\Common\Include;..\..\..\Common\Protocol\Include\common;..\..\..\Common\Protocol\Include\ss;..\..\..\Common\Protocol\Include\cs;..\..\..\Common\Engine\Include;..\..\..\Common\Utility\Include;..\..\..\Common\NetWork\Include;..\..\..\Common\GameLogic\Include;..\..\..\Common\GameLogic\Src;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Include;..\..\..\Dependency\FastDelegate;..\..\..\Dependency\CxImage\CxImage;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\DXSDK_9_33\Include;..\..\..\Dependency\lua-5.1.4\src;..\..\..\Dependency\tinyxml_2_5_3\include;..\..\..\Dependency\PathEngine_5_16\;..\..\..\Dependency\Miles\;..\..\..\Dependency\PhysX2.6.4\Include;..\..\..\Dependency\FreeType\;..\..\..\Dependency\PME\src;..\..\..\Dependency\zlib;..\..\..\Dependency\tbb30_018oss\include;..\..\..\Dependency\Sqlite3\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_DX9;T6_CLIENT;_LIB;NIDEBUG;_MAP_VIEWER_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fbxsdk_md2005.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MapViewerD.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Common\Utility\Lib;..\..\..\Dependency\fbx\lib;..\..\..\Common\Engine\Lib;..\..\..\Common\Network\Lib;..\..\..\Common\Protocol\Lib;..\..\..\Common\GameLogic\Lib;..\..\..\Dependency\CxImage\Lib\Debug;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\DXSDK_9_33\Lib\x86;..\..\..\Dependency\tinyxml_2_5_3\lib;..\..\..\Dependency\PhysX2.6.4\Lib;..\..\..\Dependency\FreeType\Lib;..\..\..\Dependency\PME\lib;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Lib\VC80\DebugLib;..\..\..\Dependency\Miles;..\..\..\Dependency\zlib\lib;..\..\..\Dependency\tbb30_018oss\lib\ia32\vc8;..\..\..\Dependency\PerfSDK;..\..\..\Dependency\Sqlite3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Oy-
+/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Dependency;..\..\..\Dependency\fbx\include;..\..\..\Dependency\Miles\;..\Src\;..\Src\Base;..\Src\CSV;..\Src\Data;..\Src\BackLoading;..\Src\Script;..\Src\Camera;..\Src\Object;..\Src\Message;..\Src\Timer;..\Src\Input;..\Src\Scene;..\Src\Render;..\Src\Path;..\Src\UI;..\Src\UI\Lua_bind;..\Src\FX;..\Src\Actor;..\Src\InteractModel;..\Src\Logic;..\Src\Stage;..\Src\StateMachine;..\Src\NetWork;..\Src\Debug;..\Src\Session;..\Src\Handler;..\Src\Utility;..\Src\Item;..\Src\UIEffect;..\Src\Text;..\Src\AudioSystem;..\Src\Skill;..\..\..\Common\Include;..\..\..\Common\Protocol\Include\common;..\..\..\Common\Protocol\Include\ss;..\..\..\Common\HugProtocol\include;..\..\..\Common\Protocol\Include\cs;..\..\..\Common\Engine\Include;..\..\..\Common\Utility\Include;..\..\..\Common\NetWork\Include;..\..\..\Common\GameLogic\Include;..\..\..\Common\GameLogic\Src;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Include;..\..\..\Dependency\FastDelegate;..\..\..\Dependency\CxImage\CxImage;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\IME\include;..\..\..\Dependency\DXSDK_9_33\Include;..\..\..\Dependency\lua-5.1.4\src;..\..\..\Dependency\tinyxml_2_5_3\include;..\..\..\Dependency\PathEngine_5_16\;..\..\..\Dependency\PhysX2.6.4\Include;..\..\..\Dependency\FreeType\;..\..\..\Dependency\PME\src;..\..\..\Dependency\zlib;..\..\..\Dependency\tbb30_018oss\include;..\..\..\Dependency\HtmlLayout\Include;..\..\..\Dependency\Sqlite3\src;..\..\..\Common\UISystem\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NIRELEASE;WIN32;_WINDOWS;NDEBUG;_DX9;T6_CLIENT;_MAP_VIEWER_BUILD;_RELEASE;_STLP_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fbxsdk_md2005.lib;Engine_viewer_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MapViewerR.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependency\Lzma\lib;..\..\..\Common\Utility\Lib;..\..\..\Common\Engine\Lib;..\..\..\Common\HugProtocol\Lib;..\..\..\Common\Protocol\Lib;..\..\..\Common\GameLogic\Lib;..\..\..\Common\NetWork\Lib;..\..\..\Dependency\fbx\lib;..\..\..\Dependency\CxImage\Lib\Release;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\DXSDK_9_33\Lib\x86;..\..\..\Dependency\tinyxml_2_5_3\lib;..\..\..\Dependency\PhysX2.6.4\Lib;..\..\..\Dependency\FreeType\Lib;..\..\..\Dependency\PME\lib;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Lib\VC80\Releaselib;..\..\..\Dependency\Miles;..\..\..\Dependency\zlib\lib;..\..\..\Dependency\tbb30_018oss\lib\ia32\vc8;..\..\..\Dependency\PerfSDK;..\..\..\Dependency\IME\Lib;..\..\..\Dependency\HtmlLayout\lib;..\..\..\Dependency\Sqlite3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Oy-
+/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Dependency;..\..\..\Dependency\fbx\include;..\..\..\Dependency\Miles\;..\Src\;..\Src\Base;..\Src\CSV;..\Src\Data;..\Src\BackLoading;..\Src\Script;..\Src\Camera;..\Src\Object;..\Src\Message;..\Src\Timer;..\Src\Input;..\Src\Scene;..\Src\Render;..\Src\Path;..\Src\UI;..\Src\UI\Lua_bind;..\Src\FX;..\Src\Actor;..\Src\InteractModel;..\Src\Logic;..\Src\Stage;..\Src\StateMachine;..\Src\NetWork;..\Src\Debug;..\Src\Session;..\Src\Handler;..\Src\Utility;..\Src\Item;..\Src\UIEffect;..\Src\Text;..\Src\AudioSystem;..\Src\Skill;..\..\..\Common\Include;..\..\..\Common\Protocol\Include\common;..\..\..\Common\Protocol\Include\ss;..\..\..\Common\HugProtocol\include;..\..\..\Common\Protocol\Include\cs;..\..\..\Common\Engine\Include;..\..\..\Common\Utility\Include;..\..\..\Common\NetWork\Include;..\..\..\Common\GameLogic\Include;..\..\..\Common\GameLogic\Src;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Include;..\..\..\Dependency\FastDelegate;..\..\..\Dependency\CxImage\CxImage;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\IME\include;..\..\..\Dependency\DXSDK_9_33\Include;..\..\..\Dependency\lua-5.1.4\src;..\..\..\Dependency\tinyxml_2_5_3\include;..\..\..\Dependency\PathEngine_5_16\;..\..\..\Dependency\PhysX2.6.4\Include;..\..\..\Dependency\FreeType\;..\..\..\Dependency\PME\src;..\..\..\Dependency\zlib;..\..\..\Dependency\tbb30_018oss\include;..\..\..\Dependency\HtmlLayout\Include;..\..\..\Dependency\Sqlite3\src;..\..\..\Common\UISystem\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NISHIPPING;WIN32;_WINDOWS;NDEBUG;_DX9;T6_CLIENT;_MAP_VIEWER_BUILD;_SHIPPING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fbxsdk_md2005.lib;Engine_viewer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)MapViewer.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependency\Lzma\lib;..\..\..\Common\Utility\Lib;..\..\..\Common\Engine\Lib;..\..\..\Common\HugProtocol\Lib;..\..\..\Common\Protocol\Lib;..\..\..\Common\GameLogic\Lib;..\..\..\Common\NetWork\Lib;..\..\..\Dependency\CxImage\Lib\Release;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\fbx\lib;..\..\..\Dependency\DXSDK_9_33\Lib\x86;..\..\..\Dependency\tinyxml_2_5_3\lib;..\..\..\Dependency\PhysX2.6.4\Lib;..\..\..\Dependency\FreeType\Lib;..\..\..\Dependency\PME\lib;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Lib\VC80\ShippingLib;..\..\..\Dependency\Miles;..\..\..\Dependency\zlib\lib;..\..\..\Dependency\tbb30_018oss\lib\ia32\vc8;..\..\..\Dependency\IME\lib;..\..\..\Dependency\HtmlLayout\lib;..\..\..\Dependency\Sqlite3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm600 /bigobj /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Dependency;..\..\..\Dependency\fbx\include;..\..\..\Dependency\Miles\;..\Src\;..\Src\Base;..\Src\CSV;..\Src\Data;..\Src\BackLoading;..\Src\Script;..\Src\Camera;..\Src\Object;..\Src\Message;..\Src\Timer;..\Src\Input;..\Src\Scene;..\Src\Render;..\Src\Path;..\Src\UI;..\Src\UI\Lua_bind;..\Src\FX;..\Src\Actor;..\Src\InteractModel;..\Src\Logic;..\Src\Stage;..\Src\StateMachine;..\Src\NetWork;..\Src\Debug;..\Src\Session;..\Src\Handler;..\Src\Utility;..\Src\Item;..\Src\UIEffect;..\Src\Text;..\Src\AudioSystem;..\Src\Skill;..\Src\ToolTip;..\Src\Resource;..\Src\System;..\Src\YunYing;..\..\..\Common\Include;..\..\..\Common\Protocol\Include\cs;..\..\..\Common\Protocol\Include\com;..\..\..\Common\Protocol\Include\ss;..\..\..\Common\Protocol\Include\common;..\..\..\Common\Protocol\Include;..\..\..\Common\Engine\Include;..\..\..\Common\Utility\Include;..\..\..\Common\NetWork\Include;..\..\..\Common\UISystem\Include;..\..\..\Common\GameLogic\Include;..\..\..\Common\GameLogic\Src;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Include;..\..\..\Dependency\FastDelegate;..\..\..\Dependency\CxImage\CxImage;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\IME\include;..\..\..\Dependency\DXSDK_9_33\Include;..\..\..\Dependency\lua-5.1.4\src;..\..\..\Dependency\tinyxml_2_5_3\include;..\..\..\Dependency\PathEngine_5_16\;..\..\..\Dependency\PhysX2.6.4\Include;..\..\..\Dependency\FreeType\;..\..\..\Dependency\PME\src;..\..\..\Dependency\zlib;..\..\..\Dependency\Sqlite3\src;..\..\..\Common\UISystem\Src;..\..\..\Dependency\protobuf\include;..\..\..\Common\WinVideo\Include;..\..\..\Dependency\boost-1_57\include\boost-1_57\;..\..\..\Common\Utility\Win;..\..\..\Common\GameLogic\Win;..\..\..\Dependency\rapidjson\include;..\..\..\Tool\DUILauncher\DUIFlash\include;..\..\..\Dependency\gperftools2.7\src\windows;..\..\..\Dependency\gperftools2.7\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NIRELEASE;_USE_SERVER;WIN32;_WINDOWS;NDEBUG;_DX9;_RELEASE;_STLP_DEBUG;NI_RELEASE_MODE_LOGGING;T6_CLIENT;_CLIENT_MT;MSG_TO_GAME;USE_TC_MALLOC;PERFTOOLS_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libtcmalloc_minimal_x86_v120_xp_mtr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependency\Lzma\lib;..\..\..\Common\Utility\Lib;..\..\..\Common\Engine\Lib;..\..\..\Common\Protocol\Lib;..\..\..\Common\GameLogic\Lib;..\..\..\Common\NetWork\Lib;..\..\..\Dependency\fbx\lib;..\..\..\Dependency\CxImageVC120\Lib\Release;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\DXSDK_9_33\Lib\x86;..\..\..\Dependency\tinyxml_2_5_3\lib;..\..\..\Dependency\PhysX2.6.4\Lib;..\..\..\Dependency\FreeType\Lib;..\..\..\Dependency\PME\lib;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Lib\VC120\ReleaseLib;..\..\..\Dependency\Miles;..\..\..\Dependency\zlib\lib;..\..\..\Dependency\PerfSDK;..\..\..\Dependency\IME\Lib;..\..\..\Dependency\HtmlLayout\lib;..\..\..\Dependency\Sqlite3\lib;..\..\..\Common\UISystem\lib;..\..\..\Dependency\protobuf\lib\release\;..\..\..\Tool\Downloader\bin;..\..\..\Common\WinVideo\lib;..\..\..\Dependency\boost-1_57\lib\;..\..\..\Dependency\Lua-5.1.4\lib;..\..\..\Tool\DUILauncher\DUIFlash\bin;..\..\..\Dependency\gperftools2.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Oy-
+-Zm600
+/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\..\Dependency;..\..\..\Dependency\fbx\include;..\..\..\Dependency\Miles\;..\Src\;..\Src\Base;..\Src\CSV;..\Src\Data;..\Src\BackLoading;..\Src\Script;..\Src\Camera;..\Src\Object;..\Src\Message;..\Src\Timer;..\Src\Input;..\Src\Scene;..\Src\Render;..\Src\Path;..\Src\UI;..\Src\UI\Lua_bind;..\Src\FX;..\Src\Actor;..\Src\InteractModel;..\Src\Logic;..\Src\Stage;..\Src\StateMachine;..\Src\NetWork;..\Src\Debug;..\Src\Session;..\Src\Handler;..\Src\Utility;..\Src\Item;..\Src\UIEffect;..\Src\Text;..\Src\AudioSystem;..\Src\Skill;..\Src\ToolTip;..\Src\Resource;..\Src\System;..\Src\YunYing;..\..\..\Common\Include;..\..\..\Common\Protocol\Include\cs;..\..\..\Common\Protocol\Include\ss;..\..\..\Common\Protocol\Include\com;..\..\..\Common\Protocol\Include\common;..\..\..\Common\Protocol\Include;..\..\..\Common\Engine\Include;..\..\..\Common\Utility\Include;..\..\..\Common\NetWork\Include;..\..\..\Common\UISystem\Include;..\..\..\Common\GameLogic\Include;..\..\..\Common\GameLogic\Src;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Include;..\..\..\Dependency\FastDelegate;..\..\..\Dependency\CxImage\CxImage;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\IME\include;..\..\..\Dependency\DXSDK_9_33\Include;..\..\..\Dependency\lua-5.1.4\src;..\..\..\Dependency\tinyxml_2_5_3\include;..\..\..\Dependency\PathEngine_5_16\;..\..\..\Dependency\PhysX2.6.4\Include;..\..\..\Dependency\FreeType\;..\..\..\Dependency\PME\src;..\..\..\Dependency\zlib;..\..\..\Dependency\Sqlite3\src;..\..\..\Common\UISystem\Src;..\..\..\Dependency\protobuf\include;..\..\..\Common\WinVideo\Include;..\..\..\Dependency\boost-1_57\include\boost-1_57\;..\..\..\Common\Utility\Win;..\..\..\Common\GameLogic\Win;..\..\..\Dependency\rapidjson\include;..\..\..\Tool\DUILauncher\DUIFlash\include;..\..\..\Dependency\gperftools2.7\src\windows;..\..\..\Dependency\gperftools2.7\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NISHIPPING;WIN32;_WINDOWS;NDEBUG;_DX9;T6_CLIENT;_SHIPPING;_USE_SERVER;_SCL_SECURE_NO_WARNINGS;_USRDLL;CLIENT_DLL;CLIENT_EXPORTS;_CLIENT_MT;MSG_TO_GAME;USE_DOWNLOADER;USE_TC_MALLOC;PERFTOOLS_DLL_DECL=;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ClientPCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libtcmalloc_minimal_x86_v120_xp_mtr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)JZClient.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependency\Lzma\lib;..\..\..\Common\Utility\Lib;..\..\..\Common\Engine\Lib;..\..\..\Common\Protocol\Lib;..\..\..\Common\GameLogic\Lib;..\..\..\Common\NetWork\Lib;..\..\..\Dependency\fbx\lib;..\..\..\Dependency\CxImageVC120\Lib\Release;..\..\..\Dependency\DbgLib\DbgLib;..\..\..\Dependency\DXSDK_9_33\Lib\x86;..\..\..\Dependency\tinyxml_2_5_3\lib;..\..\..\Dependency\PhysX2.6.4\Lib;..\..\..\Dependency\FreeType\Lib;..\..\..\Dependency\PME\lib;..\..\..\Dependency\GameBryo-2.3\sdk\Win32\Lib\VC120\ShippingLib;..\..\..\Dependency\Miles;..\..\..\Dependency\zlib\lib;..\..\..\Dependency\IME\Lib;..\..\..\Dependency\HtmlLayout\lib;..\..\..\Dependency\Sqlite3\lib;..\..\..\Common\UISystem\lib;..\..\..\Dependency\protobuf\lib\release\;..\..\..\Tool\Downloader\bin;..\..\..\Common\WinVideo\lib;..\..\..\Dependency\boost-1_57\lib\;..\..\..\Dependency\Lua-5.1.4\lib;..\..\..\Dependency\curl-7.45.0\lib;..\..\..\Tool\DUILauncher\DUIFlash\bin;..\..\..\Dependency\gperftools2.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ManifestFile>$(IntDir)$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <FixedBaseAddress>false</FixedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Dependency\PME\src\pme.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Src\AudioSystem\AS_ClientSoundManager.cpp" />
+    <ClCompile Include="..\Src\BackLoading\BL_AsyncOperation.cpp" />
+    <ClCompile Include="..\Src\BackLoading\BL_AsyncOperationManager.cpp" />
+    <ClCompile Include="..\Src\Base\BS_ClientMaterialManager.cpp" />
+    <ClCompile Include="..\Src\Base\BS_ClientModelContentManager.cpp" />
+    <ClCompile Include="..\Src\Base\BS_ClientWaterMeshManager.cpp" />
+    <ClCompile Include="..\Src\Base\LC_ClientHelp.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_AnimCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_BaseCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_BossShowCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_CameraManager.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_DraconisCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_FreeCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_LockCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_SelCharCamera.cpp" />
+    <ClCompile Include="..\Src\Camera\CA_TrackAnimCamera.cpp" />
+    <ClCompile Include="..\Src\ClientApp.cpp" />
+    <ClCompile Include="..\Src\ClientPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Src\CSV\ClientConfigManager.cpp" />
+    <ClCompile Include="..\Src\CSV\CSV_Client_Helper.cpp" />
+    <ClCompile Include="..\Src\Data\GD_ClientActorModel.cpp" />
+    <ClCompile Include="..\Src\Data\GD_ClientAsyncModelManager.cpp" />
+    <ClCompile Include="..\Src\Data\GD_ClientBulletManager.cpp" />
+    <ClCompile Include="..\Src\Data\GD_ClientChestModel.cpp" />
+    <ClCompile Include="..\Src\Data\GD_ClientSceneModel.cpp" />
+    <ClCompile Include="..\Src\Data\GD_DynamicCollisionManager.cpp" />
+    <ClCompile Include="..\Src\Debug\DG_DebugManager.cpp" />
+    <ClCompile Include="..\Src\DllMain.cpp" />
+    <ClCompile Include="..\Src\FX\FX_ClientFxManager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromDebugConsole.cpp" />
+    <ClCompile Include="..\Src\Handler\HL_FromGameServer.cpp" />
+    <ClCompile Include="..\Src\Handler\HL_FromLoginServer.cpp" />
+    <ClCompile Include="..\Src\Input\IP_InputManager.cpp" />
+    <ClCompile Include="..\Src\InteractModel\IM_Manager.cpp" />
+    <ClCompile Include="..\Src\LianYun\duowan\include\yggamemsg_loadlibrary.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_AchievementManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_AcrossMapPath.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_AuctionStruct.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientActivityManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientActorOperationManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientAlliance.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientArenaBattleChallengeInfoAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientArenaManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientAuctionManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientCurrencyTradeManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientDialogInfo.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientDialogManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientFriendMsgBroad.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientFriendMsgBroadStruct.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientFriendNick.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGameEvent.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGamePlayer.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGamePlayerManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGameStoryManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGuildHomeMgr.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGuildManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientGuildWarAsset.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientItem.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientItemFactory.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientLogicAreaManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientLogicManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientMailManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientMainTask.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientMap.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientMapTranscriptionManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientMapTransDataEntry.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientNetPlayer.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientNetPlayerManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientNewBeeManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientNPC.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientNPCInteractionManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientNPCManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientOpenAbilityManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientPackEntryFactory.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientPlaceHolder.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientPlaceHolderManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientPlayerGroup.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientPlayerGroupManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientProduction.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientRaidHookAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientRumorManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientSafeSystemAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientSearchPlayer.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientSector.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientShopAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientShopCity.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientShortcutBar.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientShotActivity.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientSocietyAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientSoulRefineAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientTask.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientTaskManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientTaskMap.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientTranscriptionInfoManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientUICutScenes.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientUICutScenesManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientViewPlayerInfo.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientWorldLevelAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ClientWorldManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_Conversationmanager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_CurrencyTradeData.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_GameEventHandler.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_MailAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_MailStruct.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_MapManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_MiniMap.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_NoticeAnalysisMgr.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_ObjectDescription.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_PlayerDetailManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_PlayerFlopManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_RadarMap.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_SecretTreasureAsset.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_TitleManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_TooltipManager.cpp" />
+    <ClCompile Include="..\Src\Logic\LC_TownMap.cpp" />
+    <ClCompile Include="..\Src\Main.cpp" />
+    <ClCompile Include="..\Src\Message\MG_MessageBase.cpp" />
+    <ClCompile Include="..\Src\Message\MG_MessageCenter.cpp" />
+    <ClCompile Include="..\Src\Message\MG_MessageHandlerInterface.cpp" />
+    <ClCompile Include="..\Src\Message\MG_MessageQueue.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_ClientNetManager.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_ClientSessionFactory.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_ClientSessionManager.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_Debugger2ClientSession.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_Game2ClientSession.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_Helper.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_Login2ClientSession.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_Profile2ClientSession.cpp" />
+    <ClCompile Include="..\Src\NetWork\NW_Signature2ClientSession.cpp" />
+    <ClCompile Include="..\Src\Path\PF_ClientPathManager.cpp" />
+    <ClCompile Include="..\Src\Render\RG_AvatarRenderClick.cpp" />
+    <ClCompile Include="..\Src\Render\RG_ClientPointLightManager.cpp" />
+    <ClCompile Include="..\Src\Render\RG_ClientRenderStep.cpp" />
+    <ClCompile Include="..\Src\Render\RG_CustomeShadowGenerator.cpp" />
+    <ClCompile Include="..\Src\Render\RG_GrassRenderClick.cpp" />
+    <ClCompile Include="..\Src\Render\RG_MiniMapRenderStep.cpp" />
+    <ClCompile Include="..\Src\Render\RG_RenderManager.cpp" />
+    <ClCompile Include="..\Src\Render\RG_SceneRenderView.cpp" />
+    <ClCompile Include="..\Src\Render\RG_SplashScreen.cpp" />
+    <ClCompile Include="..\Src\Render\RG_UERenderClick.cpp" />
+    <ClCompile Include="..\Src\Render\RG_UiEffectRenderView.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_SceneManager.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_SceneVisibleChunkSelector.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldChunk.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldChunkCluster.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldMap.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldTile.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_Terraincallback.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_WorldChunkGeometryDataManager.cpp" />
+    <ClCompile Include="..\Src\Scene\SE_WorldMiniMap.cpp" />
+    <ClCompile Include="..\Src\Script\SC_CareerStudyFakeScript.cpp" />
+    <ClCompile Include="..\Src\Script\SC_ClientDebugInterface.cpp" />
+    <ClCompile Include="..\Src\Script\SC_ClientScriptInterface.cpp" />
+    <ClCompile Include="..\Src\Script\SC_ClientSkillInterface.cpp" />
+    <ClCompile Include="..\Src\Skill\SK_ClientSkillEventManager.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_AutoGuding.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientControllerFactory.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientGamePlayerController.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNetPlayerController.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCController.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_BORN.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_CHASE.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_DEAD.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_DIZZ.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_FOLLOW.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_IDLE.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_PASSIVE_MOVE.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_RETREAT.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_SLEEP.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_TALK.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_WANDER.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_DEAD.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_DIZZ.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_JUMP.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_PASSIVE_MOVE.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_RUN.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_SLEEP.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_STAND.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientStateFactory.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_ClientSuitNPCController.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStageMachine.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_CHANGE_SERVER.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_CREATE_CHARACTER.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_GAME.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_LOADING.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_LOGIN.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_QUIT.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_SEL_CHARACTER.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_SEL_CHAR_SERVER.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_SEL_SERVER.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_START.cpp" />
+    <ClCompile Include="..\Src\StateMachine\SM_WalkTransferManager.cpp" />
+    <ClCompile Include="..\Src\System\link_config.cpp" />
+    <ClCompile Include="..\Src\System\tc_interface.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Src\Text\TT_TextManager.cpp" />
+    <ClCompile Include="..\Src\Timer\TM_ClientTimeManager.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_ConsumeItemTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_EquipItemTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_FormulaItemTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_GameStoryTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_GoodToolTip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_ItemTooltipBase.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_MaterialItemTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_MeditateTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_MissionItemTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_SkillBookItemTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_SkillDetail.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_SkillLevelUpTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_SkillStateTooltip.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_SkillTooltipBase.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_TooltipBase.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_TooltipDirector.cpp" />
+    <ClCompile Include="..\Src\ToolTip\LC_VehicleItemTooltip.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_NameArrange.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_NPCBlood.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_PlayerBlood.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_PlayerName.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_RenderManager.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_ResourceManager.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_SingleTexture.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_Task.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_UiEffectBase.cpp" />
+    <ClCompile Include="..\Src\UIEffect\UE_UiEffectManager.cpp" />
+    <ClCompile Include="..\Src\UI\UI_AvatarManager.cpp" />
+    <ClCompile Include="..\Src\UI\UI_AvatarRender.cpp" />
+    <ClCompile Include="..\Src\UI\UI_UIManager.cpp" />
+    <ClCompile Include="..\Src\UI\UI_VideoTexture.cpp" />
+    <ClCompile Include="..\Src\Utility\CWebPage.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+      </PrecompiledHeader>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">false</TreatWarningAsError>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">
+      </PrecompiledHeader>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">false</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ClientGlobalSettings.cpp" />
+    <ClCompile Include="..\Src\Utility\UT_Curl.cpp" />
+    <ClCompile Include="..\Src\Utility\UT_CutSceneManager.cpp" />
+    <ClCompile Include="..\Src\Utility\UT_DebugCommandParser.cpp" />
+    <ClCompile Include="..\Src\Utility\UT_ThreadPool.cpp" />
+    <ClCompile Include="..\Src\YunYing\YunYingMgr.cpp" />
+    <ClCompile Include="..\Src\YunYing\YunYingPlatform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Dependency\PME\src\pcre.h" />
+    <ClInclude Include="..\..\..\Dependency\PME\src\pme.h" />
+    <ClInclude Include="..\Src\AudioSystem\AS_ClientSoundManager.h" />
+    <ClInclude Include="..\Src\BackLoading\BL_AsyncOperation.h" />
+    <ClInclude Include="..\Src\BackLoading\BL_AsyncOperationManager.h" />
+    <ClInclude Include="..\Src\Base\BS_ClientMaterialManager.h" />
+    <ClInclude Include="..\Src\Base\BS_ClientModelContentManager.h" />
+    <ClInclude Include="..\Src\Base\BS_ClientWaterMeshManager.h" />
+    <ClInclude Include="..\Src\Base\LC_ClientHelp.h" />
+    <ClInclude Include="..\Src\Camera\CA_AnimCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_BaseCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_BossShowCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_CameraManager.h" />
+    <ClInclude Include="..\Src\Camera\CA_DraconisCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_FreeCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_LockCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_SelCharCamera.h" />
+    <ClInclude Include="..\Src\Camera\CA_TrackAnimCamera.h" />
+    <ClInclude Include="..\Src\ClientApp.h" />
+    <ClInclude Include="..\Src\ClientDefine.h" />
+    <ClInclude Include="..\Src\ClientPCH.h" />
+    <ClInclude Include="..\Src\CSV\ClientConfigManager.h" />
+    <ClInclude Include="..\Src\CSV\CSV_Client_Helper.h" />
+    <ClInclude Include="..\Src\Data\GD_ClientActorModel.h" />
+    <ClInclude Include="..\Src\Data\GD_ClientAsyncModelManager.h" />
+    <ClInclude Include="..\Src\Data\GD_ClientBulletManager.h" />
+    <ClInclude Include="..\Src\Data\GD_ClientChestModel.h" />
+    <ClInclude Include="..\Src\Data\GD_ClientSceneModel.h" />
+    <ClInclude Include="..\Src\Data\GD_DynamicCollisionManager.h" />
+    <ClInclude Include="..\Src\Debug\DG_DebugManager.h" />
+    <ClInclude Include="..\Src\DllMain.h" />
+    <ClInclude Include="..\Src\FX\FX_ClientFxManager.h" />
+    <ClInclude Include="..\Src\Handler\HL_FromDebugConsole.h" />
+    <ClInclude Include="..\Src\Handler\HL_FromGameServer.h" />
+    <ClInclude Include="..\Src\Handler\HL_FromLoginServer.h" />
+    <ClInclude Include="..\Src\Input\InputDef.h" />
+    <ClInclude Include="..\Src\Input\IP_InputManager.h" />
+    <ClInclude Include="..\Src\InteractModel\IM_Manager.h" />
+    <ClInclude Include="..\Src\LianYun\duowan\include\yggamemsg_loadlibrary.h" />
+    <ClInclude Include="..\Src\Logic\LC_AchievementManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_AcrossMapPath.h" />
+    <ClInclude Include="..\Src\Logic\LC_AuctionStruct.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientActivityManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientActorOperationManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientAlliance.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientArenaBattleChallengeInfoAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientArenaManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientAuctionManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientCurrencyTradeManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientDialogInfo.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientDialogManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientFriendMsgBroad.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientFriendMsgBroadStruct.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientFriendNick.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGameEvent.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGamePlayer.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGamePlayerManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGameStoryManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGuildHomeMgr.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGuildManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientGuildWarAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientItem.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientItemFactory.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientLogicAreaManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientLogicManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientMailManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientMainTask.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientMap.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientMapTranscriptionManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientMapTransDataEntry.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNetPlayer.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNetPlayerManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNewBeeManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNPC.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNPCAction.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNPCInteractionManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientNPCManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientOpenAbilityManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientPackEntryFactory.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientPlaceHolder.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientPlaceHolderManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientPlayerGroup.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientPlayerGroupManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientProduction.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientRaidHookAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientRumorManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientSafeSystemAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientSearchPlayer.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientSector.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientShopAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientShopCity.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientShortcutBar.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientShotActivity.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientSocietyAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientSoulRefineAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientTask.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientTaskManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientTaskMap.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientTranscriptionInfoManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientUICutScenes.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientUICutScenesManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientViewPlayerInfo.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientWorldLevelAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_ClientWorldManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_Conversationmanager.h" />
+    <ClInclude Include="..\Src\Logic\LC_CurrencyTradeData.h" />
+    <ClInclude Include="..\Src\Logic\LC_GameEventHandler.h" />
+    <ClInclude Include="..\Src\Logic\LC_MailAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_MailStruct.h" />
+    <ClInclude Include="..\Src\Logic\LC_MapManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_MiniMap.h" />
+    <ClInclude Include="..\Src\Logic\LC_NoticeAnalysisMgr.h" />
+    <ClInclude Include="..\Src\Logic\LC_ObjectDescription.h" />
+    <ClInclude Include="..\Src\Logic\LC_PathDesc.h" />
+    <ClInclude Include="..\Src\Logic\LC_PlayerDetailManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_PlayerFlopManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_RadarMap.h" />
+    <ClInclude Include="..\Src\Logic\LC_SecretTreasureAsset.h" />
+    <ClInclude Include="..\Src\Logic\LC_TitleManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_TooltipManager.h" />
+    <ClInclude Include="..\Src\Logic\LC_TownMap.h" />
+    <ClInclude Include="..\Src\Message\MG_MessageBase.h" />
+    <ClInclude Include="..\Src\Message\MG_MessageCenter.h" />
+    <ClInclude Include="..\Src\Message\MG_MessageDefine.h" />
+    <ClInclude Include="..\Src\Message\MG_MessageHandlerInterface.h" />
+    <ClInclude Include="..\Src\Message\MG_MessageQueue.h" />
+    <ClInclude Include="..\Src\NetWork\NW_ClientNetManager.h" />
+    <ClInclude Include="..\Src\NetWork\NW_ClientSessionFactory.h" />
+    <ClInclude Include="..\Src\NetWork\NW_ClientSessionManager.h" />
+    <ClInclude Include="..\Src\NetWork\NW_Debugger2ClientSession.h" />
+    <ClInclude Include="..\Src\NetWork\NW_Game2ClientSession.h" />
+    <ClInclude Include="..\Src\NetWork\NW_Helper.h" />
+    <ClInclude Include="..\Src\NetWork\NW_Login2ClientSession.h" />
+    <ClInclude Include="..\Src\NetWork\NW_Profile2ClientSession.h" />
+    <ClInclude Include="..\Src\NetWork\NW_Signature2ClientSession.h" />
+    <ClInclude Include="..\Src\Path\PF_ClientPathManager.h" />
+    <ClInclude Include="..\Src\Render\RG_AvatarRenderClick.h" />
+    <ClInclude Include="..\Src\Render\RG_ClientPointLightManager.h" />
+    <ClInclude Include="..\Src\Render\RG_ClientRenderStep.h" />
+    <ClInclude Include="..\Src\Render\RG_CustomeShadowGenerator.h" />
+    <ClInclude Include="..\Src\Render\RG_GrassRenderClick.h" />
+    <ClInclude Include="..\Src\Render\RG_MiniMapRenderStep.h" />
+    <ClInclude Include="..\Src\Render\RG_RenderManager.h" />
+    <ClInclude Include="..\Src\Render\RG_SceneRenderView.h" />
+    <ClInclude Include="..\Src\Render\RG_SplashScreen.h" />
+    <ClInclude Include="..\Src\Render\RG_UERenderClick.h" />
+    <ClInclude Include="..\Src\Render\RG_UiEffectRenderView.h" />
+    <ClInclude Include="..\Src\Resource\ClientResDefine.h" />
+    <ClInclude Include="..\Src\Resource\ClientTextDefine.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneManager.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneTerrainInfo.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneVisibleChunkSelector.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldChunk.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldChunkCluster.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldMap.h" />
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldTile.h" />
+    <ClInclude Include="..\Src\Scene\SE_Terraincallback.h" />
+    <ClInclude Include="..\Src\Scene\SE_WorldChunkGeometryDataManager.h" />
+    <ClInclude Include="..\Src\Scene\SE_WorldMiniMap.h" />
+    <ClInclude Include="..\Src\Script\ClientScriptPCH.h" />
+    <ClInclude Include="..\Src\Script\SC_CareerStudyFakeScript.h" />
+    <ClInclude Include="..\Src\Script\SC_ClientDebugInterface.h" />
+    <ClInclude Include="..\Src\Script\SC_ClientScriptInterface.h" />
+    <ClInclude Include="..\Src\Script\SC_ClientSkillInterface.h" />
+    <ClInclude Include="..\Src\Skill\SK_ClientSkillEventManager.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_AutoGuding.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientControllerFactory.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientGamePlayerController.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNetPlayerController.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCController.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_BORN.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_CHASE.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_DEAD.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_DIZZ.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_FOLLOW.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_IDLE.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_PASSIVE_MOVE.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_RETREAT.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_SLEEP.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_TALK.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_WANDER.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_DEAD.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_DIZZ.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_JUMP.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_PASSIVE_MOVE.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_RUN.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_SLEEP.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_STAND.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientStateFactory.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_ClientSuitNPCController.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStageMachine.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_CHANGE_SERVER.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_CREATE_CHARACTER.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_GAME.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_LOADING.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_LOGIN.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_QUIT.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_SEL_CHARACTER.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_SEL_CHAR_SERVER.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_SEL_SERVER.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_START.h" />
+    <ClInclude Include="..\Src\StateMachine\SM_WalkTransferManager.h" />
+    <ClInclude Include="..\Src\System\tc_interface.h" />
+    <ClInclude Include="..\Src\Text\TT_TextManager.h" />
+    <ClInclude Include="..\Src\Timer\TM_ClientTimeManager.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_ConsumeItemTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_EquipItemTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_FormulaItemTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_GameStoryTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_GoodToolTip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_ItemTooltipBase.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_MaterialItemTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_MeditateTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_MissionItemTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_SkillBookItemTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_SkillDetail.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_SkillLevelUpTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_SkillStateTooltip.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_SkillTooltipBase.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_TooltipBase.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_TooltipDirector.h" />
+    <ClInclude Include="..\Src\ToolTip\LC_VehicleItemTooltip.h" />
+    <CustomBuild Include="..\Src\UIEffect\UE_NameArrange.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_NPCBlood.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_PlayerBlood.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_PlayerName.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_RenderManager.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_ResourceManager.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_SingleTexture.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_Task.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectBase.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectHead.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectManager.h" />
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectPoolBase.h" />
+    <ClInclude Include="..\Src\UI\UI_AvatarDefine.h" />
+    <ClInclude Include="..\Src\UI\UI_AvatarManager.h" />
+    <ClInclude Include="..\Src\UI\UI_AvatarRender.h" />
+    <ClInclude Include="..\Src\UI\UI_UIManager.h" />
+    <ClInclude Include="..\Src\UI\UI_VideoTexture.h" />
+    <ClInclude Include="..\Src\Utility\CWebPage.h" />
+    <ClInclude Include="..\Src\Utility\UT_ClientGlobalSettings.h" />
+    <ClInclude Include="..\Src\Utility\UT_Curl.h" />
+    <ClInclude Include="..\Src\Utility\UT_CutSceneManager.h" />
+    <ClInclude Include="..\Src\Utility\UT_DebugCommandParser.h" />
+    <ClInclude Include="..\Src\Utility\UT_LogicInfoMessage.h" />
+    <ClInclude Include="..\Src\Utility\UT_ThreadPool.h" />
+    <ClInclude Include="..\Src\Utility\UT_WaveGenerator.h" />
+    <ClInclude Include="..\Src\YunYing\YunYingMgr.h" />
+    <ClInclude Include="..\Src\YunYing\YunYingPlatform.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="logo.ico" />
+    <Image Include="logoSmall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Src\Script\SC_ClientScriptInterface.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Perl.exe "..\..\..\Dependency\lua-5.1.4\codgen\lua_bind_gen_c.pl" -I %(FullPath) -O %(RootDir)%(Directory)%(Filename).inl
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)/%(Filename).inl;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">Perl.exe "..\..\..\Dependency\lua-5.1.4\codgen\lua_bind_gen.pl" -I %(FullPath) -O %(RootDir)%(Directory)%(Filename).inl
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MapViewer_Debug|Win32'">%(RootDir)%(Directory)/%(Filename).inl;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">Perl.exe "..\..\..\Dependency\lua-5.1.4\codgen\lua_bind_gen.pl" -I %(FullPath) -O %(RootDir)%(Directory)%(Filename).inl
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MapViewer_Release|Win32'">%(RootDir)%(Directory)/%(Filename).inl;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">Perl.exe "..\..\..\Dependency\lua-5.1.4\codgen\lua_bind_gen.pl" -I %(FullPath) -O %(RootDir)%(Directory)%(Filename).inl
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MapViewer_Shipping|Win32'">%(RootDir)%(Directory)/%(Filename).inl;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">Perl.exe "..\..\..\Dependency\lua-5.1.4\codgen\lua_bind_gen_c.pl" -I %(FullPath) -O %(RootDir)%(Directory)%(Filename).inl
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RootDir)%(Directory)/%(Filename).inl;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">Perl.exe "..\..\..\Dependency\lua-5.1.4\codgen\lua_bind_gen_c.pl" -I %(FullPath) -O %(RootDir)%(Directory)%(Filename).inl
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ShippingDLLMT|Win32'">%(RootDir)%(Directory)/%(Filename).inl;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Src\Handler\HL_FromGameServer_ArenaProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_AssistProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_AuctionProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_CardProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_ChatProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_ChestProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_CurrencyTradeProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_DebugProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_DuelProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_DungeonStage.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_FriendProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_FrobidProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_GameProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_GiftProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_GroupProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_GuildHomeProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_GuildProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_LoginProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_MailProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_Profile.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_QuanThanhTemple.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_SearchProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_ShopCityProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_SkillProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_SyncProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_TalentProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_TaskProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_TradeProtocol.inl" />
+    <None Include="..\Src\Handler\HL_FromGameServer_VehicleProtocol.inl" />
+    <None Include="..\Src\Logic\LC_ClientGameEventUserData.inl" />
+    <None Include="..\Src\Logic\LC_ClientGamePlayer.inl" />
+    <None Include="..\Src\Logic\LC_ClientGamePlayer_MsgHandler.inl" />
+    <None Include="..\Src\Logic\LC_MailAsset.inl" />
+    <None Include="..\Src\Logic\LC_MapManager.inl" />
+    <None Include="..\Src\Logic\LC_MiniMap.inl" />
+    <None Include="..\Src\Logic\LC_TownMap.inl" />
+    <None Include="..\Src\Script\SC_ClientSkillInterface.inl" />
+    <None Include="..\Src\UIEffect\UE_UiEffectBase.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Engine\Engine\EngineVC120.vcxproj">
+      <Project>{c846e4e7-2a4c-4886-b3c5-0c2d6e04184e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\GameLogic\GameLogic\GameLogicVC120.vcxproj">
+      <Project>{24f9ca0b-5953-4974-98c1-702bc54b539f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Network\Network\NetworkVC120.vcxproj">
+      <Project>{bfda54d6-dc76-41e9-8a29-96ab12171db1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Protocol\Protocol\ProtocolVC120.vcxproj">
+      <Project>{fbebe64c-4b00-4730-ac05-2748697f8c9f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\UISystem\Src\UISystemVC120.vcxproj">
+      <Project>{030449f1-774d-4f67-af67-5f84e2a68132}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Utility\Utility\UtilityVC120.vcxproj">
+      <Project>{a9637957-a78e-4fb9-956d-82d132c1c0f7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

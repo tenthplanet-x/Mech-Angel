@@ -1,0 +1,69 @@
+客户端：
+	/RGameRepo/trunk/jzwl_dev/Client/Client/Build/Client.rc			FileDescription(文件说明)    ProductName(产品名称)   IDS_GAME_NAME(游戏名称)
+	/RGameRepo/trunk/jzwl_dev/Client/Client/Build/logo.ico          logo 256*256  128*128  64*64  32*32
+	/RGameRepo/trunk/jzwl_dev/Client/Client/Build/logoSmall.ico		logo 32*32
+	/RGameRepo/trunk/jzwl_dev/Bin/Loading.swf						flash
+	/RGameRepo/trunk/jzwl_dev/Client/Client/Src/YunYing/YunYingPlatform.cpp    名称(充值网页标题名称)
+	需要编译
+
+
+**************************************************************************************************************
+
+
+微端，Launcher：
+	/RGameRepo/trunk/jzwl_dev/Tool/JZLauncher/SXSYLauncher360wan-mb/Launcher.rc					名称
+	/RGameRepo/trunk/jzwl_dev/Tool/JZLauncher/SXSYLauncher360wan-mb/res/logo.ico				logo 64x64
+	/RGameRepo/trunk/jzwl_dev/Tool/JZLauncher/SXSYLauncher360wan-mb/skin						背景图等
+	生成exe后，数字签名
+	自己发布到ftp
+
+
+IE浏览器一键安装微端，ClickOnce：（内含‘Launcher’，需要先编译、签名‘Launcher’）
+	生成包后，自己发布到ftp
+	然后通知修改网页链接，微端和clickonce链接
+		http://res.w360.sxsy.yx-g.com/rgame/client/clickonce/20210419/sxsy.application
+		http://res.w360.sxsy.yx-g.com/rgame/client/launcher/360wan/20210419/sxsy360wan.exe
+
+
+客户端内调起的支付程序，MiniPay:
+	/RGameRepo/trunk/jzwl_dev/Tool/JZLauncher/SXSYMiniPay/SxsyMiniPay.rc						名称
+	/RGameRepo/trunk/jzwl_dev/Tool/JZLauncher/SXSYMiniPay/res/logo.ico							logo 64x64
+	生成exe后，数字签名
+	然后放到Bin目录，随客户端打包发布出去
+
+
+神座插件加载器，jlg_sxsy_loader：
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/jlg_sxsy_loader/resource/logo.ico				logo 256x256
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/jlg_sxsy_loader/resource/Loading.swf
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/common/constant.h								名称
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/jlg_sxsy_loader/resource/jlg_sxsy_loader.rc		名称
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/jlg_sxsy_loader/loaderJZ.cpp						c_loaderVer
+	生成dll/exe后，数字签名
+	dll/exe，logo.webp 交给神座的人进行打包，对方返回文件后，自己发布到ftp
+
+
+360插件加载器，360_sxsy_loader：（内含‘神座Loader’，需要先编译、签名‘神座Loader’）
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/360_sxsy_loader/resource/logo.ico				logo 256x256
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/360_sxsy_loader/resource/360_sxsy_loader.rc		名称
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/common/constant.h								名称
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/360_sxsy_loader/resource/jlg_sxsy_loader.exe
+	/RGameRepo/trunk/jzwl_dev/Tool/DUILauncher/360_sxsy_loader/resource/jlg_sxsy_loader.exe.lzma
+	签过名的 jlg_sxsy_loader.exe 放入resource目录内，编译生成dll
+	生成dll后，数字签名
+	dll交给360的人发布，对方会传ftp，不用自己传
+
+
+所有dll、exe，都需要交给360的人加白，同时发送md5码
+
+**************************************************************************************************************
+
+
+网页：
+	网页title					名称
+	360插件背景图				名称、logo
+	微端下载背景图				名称、logo
+	logo.webp					神座插件加载背景图，需提供给神座
+	微端登陆页面				名称、logo
+	官网						名称、logo
+	游戏大厅					名称、logo
+	

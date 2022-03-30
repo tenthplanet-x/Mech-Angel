@@ -1,0 +1,5 @@
+EXPORT_CLASS UI_LogicClass
+bool_F_Open
+bool_F_Close
+bool_F_IsOpen
+EXPORT_END

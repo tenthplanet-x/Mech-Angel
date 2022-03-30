@@ -1,0 +1,4 @@
+EXPORT_CLASS UI_LCMap:UI_LogicClass
+void_F_ClickDown
+EXPORT_END
+

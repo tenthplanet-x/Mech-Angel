@@ -1,0 +1,3 @@
+EXPORT_CLASS UI_LCMenuHandler:UI_LogicClass
+void_F_ShowSplitItemDialog
+EXPORT_END

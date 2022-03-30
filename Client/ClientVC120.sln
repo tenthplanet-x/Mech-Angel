@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\..\Common\Engine\Engine\EngineVC120.vcxproj", "{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "..\..\Common\Utility\Utility\UtilityVC120.vcxproj", "{A9637957-A78E-4FB9-956D-82D132C1C0F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Protocol", "..\..\Common\Protocol\Protocol\ProtocolVC120.vcxproj", "{FBEBE64C-4B00-4730-AC05-2748697F8C9F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameLogic", "..\..\Common\GameLogic\GameLogic\GameLogicVC120.vcxproj", "{24F9CA0B-5953-4974-98C1-702BC54B539F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Build\ClientVC120.vcxproj", "{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetworkVC120", "..\..\Common\Network\Network\NetworkVC120.vcxproj", "{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UISystem", "..\..\Common\UISystem\Src\UISystemVC120.vcxproj", "{030449F1-774D-4F67-AF67-5F84E2A68132}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ReleaseMT|Win32 = ReleaseMT|Win32
+		ShippingDLLMT|Win32 = ShippingDLLMT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ReleaseMT|Win32.ActiveCfg = Release|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ReleaseMT|Win32.Build.0 = Release|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ShippingDLLMT|Win32.ActiveCfg = Shipping|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ShippingDLLMT|Win32.Build.0 = Shipping|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

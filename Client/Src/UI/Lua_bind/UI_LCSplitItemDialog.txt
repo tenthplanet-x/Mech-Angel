@@ -1,0 +1,3 @@
+EXPORT_CLASS UI_LCSplitItemDialog:UI_LogicClass
+void_F_DoSplit
+EXPORT_END

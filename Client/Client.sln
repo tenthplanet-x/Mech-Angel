@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\..\Common\Engine\Engine\Engine.vcproj", "{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{24F9CA0B-5953-4974-98C1-702BC54B539F} = {24F9CA0B-5953-4974-98C1-702BC54B539F}
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7} = {A9637957-A78E-4FB9-956D-82D132C1C0F7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "..\..\Common\Utility\Utility\Utility.vcproj", "{A9637957-A78E-4FB9-956D-82D132C1C0F7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Protocol", "..\..\Common\Protocol\Protocol\Protocol.vcproj", "{FBEBE64C-4B00-4730-AC05-2748697F8C9F}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameLogic", "..\..\Common\GameLogic\GameLogic\GameLogic.vcproj", "{24F9CA0B-5953-4974-98C1-702BC54B539F}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Build\Client.vcproj", "{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1} = {BFDA54D6-DC76-41E9-8A29-96AB12171DB1}
+		{030449F1-774D-4F67-AF67-5F84E2A68132} = {030449F1-774D-4F67-AF67-5F84E2A68132}
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E} = {C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7} = {A9637957-A78E-4FB9-956D-82D132C1C0F7}
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F} = {FBEBE64C-4B00-4730-AC05-2748697F8C9F}
+		{24F9CA0B-5953-4974-98C1-702BC54B539F} = {24F9CA0B-5953-4974-98C1-702BC54B539F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Network", "..\..\Common\Network\Network\Network.vcproj", "{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UISystem", "..\..\Common\UISystem\Src\UISystem.vcproj", "{030449F1-774D-4F67-AF67-5F84E2A68132}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ReleaseMT|Win32 = ReleaseMT|Win32
+		ShippingDLLMT|Win32 = ShippingDLLMT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{C846E4E7-2A4C-4886-B3C5-0C2D6E04184E}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{A9637957-A78E-4FB9-956D-82D132C1C0F7}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{FBEBE64C-4B00-4730-AC05-2748697F8C9F}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{24F9CA0B-5953-4974-98C1-702BC54B539F}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{3C3C3D3A-2F25-4F91-A864-EDA5B58E4404}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{BFDA54D6-DC76-41E9-8A29-96AB12171DB1}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ShippingDLLMT|Win32.ActiveCfg = ShippingDLLMT|Win32
+		{030449F1-774D-4F67-AF67-5F84E2A68132}.ShippingDLLMT|Win32.Build.0 = ShippingDLLMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

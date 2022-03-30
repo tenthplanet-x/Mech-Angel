@@ -1,0 +1,3 @@
+EXPORT_CLASS UI_LCDialog:UI_LogicClass
+void_F_ShowDialog
+EXPORT_END

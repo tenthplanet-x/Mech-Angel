@@ -1,0 +1,6 @@
+EXPORT_CLASS UI_LCSkillBackPack:UI_LogicClass
+int_F_DoSkillMove
+void_F_ActiveSkill
+void_F_Clear
+int_F_ShowTooltip
+EXPORT_END

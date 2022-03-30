@@ -1,0 +1,3 @@
+EXPORT_CLASS UI_LCShortcutKey:UI_LogicClass
+void_F_OnKeyChanged
+EXPORT_END

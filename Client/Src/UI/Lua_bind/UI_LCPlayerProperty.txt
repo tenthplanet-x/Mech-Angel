@@ -1,0 +1,2 @@
+EXPORT_CLASS UI_LCPlayerProperty:UI_LogicClass
+EXPORT_END

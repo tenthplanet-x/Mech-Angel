@@ -1,0 +1,24 @@
+EXPORT_CLASS UI_LCBackPack:UI_LogicClass
+void_F_ShowMenu
+int_F_DoBackPackSplit
+int_F_DoBackPackMerge
+int_F_DoBackPackMove
+void_F_DoItemUtilized
+void_F_DoCoolDown
+CUIDragItem*_F_GetDragItemPtr
+int_F_GetCurrentPack
+int_F_GetTotalPack
+string_F_GetSplitItemID
+void_F_SetSplitItemID
+string_F_GetSplitContainerID
+void_F_SetSplitContainerID
+string_F_GetSplitItemFatherID
+void_F_SetSplitItemFatherID
+int_F_ShowTooltip
+void_F_BeginSplitItem
+void_F_ArrangeItems
+void_F_ShowSplitDialog
+void_F_OnItemRClick
+void_F_OpenedByNPCShop
+void_F_ClosedByNPCShop
+EXPORT_END

@@ -1,0 +1,3 @@
+EXPORT_CLASS UI_LCLoginStage:UI_LogicClass
+void_F_OnLoginClick
+EXPORT_END

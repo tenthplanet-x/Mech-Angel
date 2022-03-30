@@ -1,0 +1,1908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{bb507b8f-d390-4717-bf4d-8189d500ad1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{df5dc0f1-3026-4f23-87d1-ea4d0befcec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{b18df2d2-2917-4b93-bb68-cdf0f3eab1b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{725cf806-27d3-4c2e-93e0-2e0cad3b0770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{c5f74552-0ddb-4f30-ba06-0bcca0cb6464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{b237c779-cb27-4c69-8337-ece1e2627cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BackLoading">
+      <UniqueIdentifier>{620886db-97c7-476c-9927-21840e06d7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine">
+      <UniqueIdentifier>{ad7ddb3d-dd82-413c-81e9-1f8c25605849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine\State">
+      <UniqueIdentifier>{dbfa260d-e086-459f-9641-b43a615a03d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine\Controller">
+      <UniqueIdentifier>{27b9cf80-3fec-4405-8ff1-30062c5e1c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{8aa377aa-20ef-4872-9379-cd1d40f4be6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX">
+      <UniqueIdentifier>{f8a7f967-e762-46b9-abdb-84ebcc06c803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{5a87fd2a-9503-4264-8391-e8506cad7ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{26428439-1c31-44d4-a49c-4198d2da9843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Logic\Actor">
+      <UniqueIdentifier>{167409a8-bdcb-424f-98af-9d6007587dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\World">
+      <UniqueIdentifier>{785d9a5e-8875-404b-8154-b72eb8a51ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Item">
+      <UniqueIdentifier>{1cfad5cf-d538-41bf-8e83-723991783f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ShortcutBar">
+      <UniqueIdentifier>{e9e677c8-dfd3-43e3-a3bf-04ca3659de03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Chest">
+      <UniqueIdentifier>{087449ab-dbcc-41e7-bbf5-28e59053fda9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Bullet">
+      <UniqueIdentifier>{670acc73-156a-4232-bcc8-59920977fc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Map">
+      <UniqueIdentifier>{7dc6de89-487e-41a9-b65c-1cf8f0bc4417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\PlayerGroup">
+      <UniqueIdentifier>{c31011ca-acaa-4354-9df3-9b513ddb7def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\ShopCity">
+      <UniqueIdentifier>{d24ad153-5ddf-4748-9d79-beae6e542daf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Task">
+      <UniqueIdentifier>{995981c7-ac84-43a1-95f7-828ca8272ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Dialog">
+      <UniqueIdentifier>{148c8aab-0625-481c-a26e-9a1a064a514c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Mail">
+      <UniqueIdentifier>{ade6f9c4-9d52-40cd-976d-38513ae2e82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\GameEvent">
+      <UniqueIdentifier>{5d712b3c-581e-4f01-9e31-f62b2d23806c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Friend">
+      <UniqueIdentifier>{8080f8c3-21f2-4adc-9458-d1fc5944d655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{5581c003-f5f9-40b4-acea-325e1d671b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{16efaf85-0afa-40b0-8acd-a2ea444b9273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler\ProtocolHandle">
+      <UniqueIdentifier>{0793f2b1-37c2-40e7-9985-ad448351108b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InteractModel">
+      <UniqueIdentifier>{c4747031-adc1-4389-8b5b-15888273ac88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIEffect">
+      <UniqueIdentifier>{a9903882-0050-4197-b034-01ba5a81362f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{6af77c7a-affe-4e2b-b39a-925fdb23fbc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AudioSystem">
+      <UniqueIdentifier>{0ba9b4a8-fda7-450f-8b4d-9affd18009fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CSV">
+      <UniqueIdentifier>{257847ff-6b09-499a-b622-8835a86cc3a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys">
+      <UniqueIdentifier>{5c2ff6f0-bb05-439c-82b8-f725a54a49ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Common">
+      <UniqueIdentifier>{7e69106f-d298-47c7-8810-c3aef18da55d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Image">
+      <UniqueIdentifier>{19e456e9-fd2a-4cb6-9daa-421b2f679695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Impl">
+      <UniqueIdentifier>{a3a5abe0-c519-49a2-bf10-5343d62c9f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Lua_bind">
+      <UniqueIdentifier>{324ecd9e-6ee7-499f-a051-1b9e31a9b018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Render">
+      <UniqueIdentifier>{c0e066aa-760d-47a8-bf8d-0cfd41ff7605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\UI">
+      <UniqueIdentifier>{d4ceda01-cfb1-4c63-ac14-ee245dfe8098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\UI\Control">
+      <UniqueIdentifier>{8b58cd71-7d45-45d5-a35f-679d06e1a404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\UI\Widget">
+      <UniqueIdentifier>{17ed38d2-4a6d-42c8-bc5d-c8243297fedc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Core">
+      <UniqueIdentifier>{882c09d0-4a00-4e4b-98dc-e23b6a21bb6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UISys\Font">
+      <UniqueIdentifier>{a8510ceb-cf72-4e45-ab6c-02ffff217ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolTip">
+      <UniqueIdentifier>{62aeae78-9e2f-43da-bbc3-4978b4d4472c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{7e7a65f4-9fe6-4df9-b124-bf2431f4f416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Path">
+      <UniqueIdentifier>{b0c971da-a981-45fa-8380-b0707a8bc128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{937bbdf4-8b7b-4ae8-a37f-657cb7363711}</UniqueIdentifier>
+    </Filter>
+	<Filter Include="Resource">
+      <UniqueIdentifier>{5531e2f7-ffaf-4479-85f8-f71a7112f9ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{f6536e4b-4784-4523-a197-fa476e7d9afd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\Scene\SE_SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_SceneVisibleChunkSelector.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldChunk.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldChunkCluster.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+	 <ClCompile Include="..\Src\ClientApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+	 <ClCompile Include="..\Src\ClientPCH.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+	<ClCompile Include="..\Src\DllMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+	<ClCompile Include="..\Src\YunYing\YunYingPlatform.cpp">
+      <Filter>YunYing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\YunYing\YunYingMgr.cpp">
+      <Filter>YunYing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\System\link_config.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldMap.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_SceneWorldTile.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_Terraincallback.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_WorldChunkGeometryDataManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Scene\SE_WorldMiniMap.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Message\MG_MessageBase.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Message\MG_MessageCenter.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Message\MG_MessageHandlerInterface.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Message\MG_MessageQueue.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Timer\TM_ClientTimeManager.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Input\IP_InputManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_ClientFxRenderClickView.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_ClientRenderStep.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_GrassRenderClick.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_LoginSceneRenderView.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_MiniMapRenderStep.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_RenderManager.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_SceneRenderView.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_UERenderClick.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_UiEffectRenderView.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_UISysRenderView.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Render\RG_WaterReflectRenderView.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_AnimCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_BaseCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_CameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_DraconisCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_FreeCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_LockCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_OrthoCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Camera\CA_SelCharCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Base\BS_ClientMaterialManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Base\BS_ClientModelContentManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Base\BS_ClientWaterMeshManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\BackLoading\BL_AsyncOperation.cpp">
+      <Filter>BackLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\BackLoading\BL_AsyncOperationManager.cpp">
+      <Filter>BackLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientControllerFactory.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientStateFactory.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStageMachine.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_CHASE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_DEAD.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_DIZZ.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_IDLE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_RETREAT.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_SLEEP.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterState_WANDER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_IDLE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_TALK.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCState_WANDER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_DEAD.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_DIZZ.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_ONVEHICLE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_RUN.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_SLEEP.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientPlayerState_STAND.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientVehicleState_IDLE.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientVehicleState_RUN.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientVehicleState_WANDER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_CREATE_CHARACTER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_GAME.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_LOADING.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_LOGIN.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_QUIT.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_SEL_CHARACTER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_SEL_SERVER.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_GameStage_START.cpp">
+      <Filter>StateMachine\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientGamePlayerController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientGameVehicleController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientMonsterController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNetPlayerController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNetVehicleController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\StateMachine\SM_ClientNPCController.cpp">
+      <Filter>StateMachine\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_ClientNetManager.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_ClientSessionFactory.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_ClientSessionManager.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Debugger2ClientSession.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Game2ClientSession.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Helper.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Login2ClientSession.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Profile2ClientSession.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\NetWork\NW_Signature2ClientSession.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\FX\FX_ClientFxManager.cpp">
+      <Filter>FX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ClientDebugInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ClientScriptInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Script\SC_ClientSkillInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Debug\DG_DebugManager.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientLogicManager.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientActorBulletMap.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientGamePlayer.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientGamePlayerManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientGameVehicle.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientGameVehicleManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientMonster.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientMonsterManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientNetPlayer.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientNetPlayerManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientNetVehicle.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientNetVehicleManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientNPC.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientNPCManager.cpp">
+      <Filter>Logic\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientMap.cpp">
+      <Filter>Logic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientSector.cpp">
+      <Filter>Logic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientWorldManager.cpp">
+      <Filter>Logic\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientItem.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientItemEnhance.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientItemFactory.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientShortcutBar.cpp">
+      <Filter>Logic\ShortcutBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientChest.cpp">
+      <Filter>Logic\Chest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientChestManager.cpp">
+      <Filter>Logic\Chest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_PlayerFlopManager.cpp">
+      <Filter>Logic\Chest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientBullet.cpp">
+      <Filter>Logic\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_AcrossMapPath.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_MapManager.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_MiniMap.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ObjectDescription.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_RadarMap.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_TownMap.cpp">
+      <Filter>Logic\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientPlayerGroup.cpp">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientPlayerGroupManager.cpp">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ShopCityClient.cpp">
+      <Filter>Logic\ShopCity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientMainTask.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientSubTask.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientTaskManager.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientTaskMap.cpp">
+      <Filter>Logic\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientDialogInfo.cpp">
+      <Filter>Logic\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientDialogManager.cpp">
+      <Filter>Logic\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientMailManager.cpp">
+      <Filter>Logic\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_MailAsset.cpp">
+      <Filter>Logic\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_MailStruct.cpp">
+      <Filter>Logic\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_GameEventHandler.cpp">
+      <Filter>Logic\GameEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_ClientFriendAsset.cpp">
+      <Filter>Logic\Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ClientGameInfoPrinter.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ClientGlobalSettings.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ClientLogManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ClientLogRemoteConsole.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_DebugCommandParser.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Utility\UT_ThreadPool.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromDebugConsole.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromGameServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Handler\HL_FromLoginServer.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\InteractModel\IM_Manager.cpp">
+      <Filter>InteractModel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_Get.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_HPCost.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_MonsterBlood.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_PlayerBlood.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_PlayerName.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_RenderManager.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_ResourceManager.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_SingleTexture.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_Task.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_UiEffectBase.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UIEffect\UE_UiEffectManager.cpp">
+      <Filter>UIEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Text\TT_TextManager.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\AudioSystem\AS_ClientSoundManager.cpp">
+      <Filter>AudioSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\CSV\CF_ClientCsvManager.cpp">
+      <Filter>CSV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UI\UI_AvatarTexture.cpp">
+      <Filter>UISys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UI\UI_UIManager.cpp">
+      <Filter>UISys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\UIRenderClick.cpp">
+      <Filter>UISys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CM_Kernel.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CM_KeyTranslate.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CM_Script.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CM_TxtCtrlr.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CM_TxtRecordset.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CM_Variant.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\UIScriptfunc.cpp">
+      <Filter>UISys\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_AnimationImage.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_Image.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_ImageArray.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_ImageBase.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_ImageFileHandler.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_ImageSet.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\IG_ImageSetManager.cpp">
+      <Filter>UISys\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\UI_SysImpl.cpp">
+      <Filter>UISys\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\Lua_C++Register.cpp">
+      <Filter>UISys\Lua_bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_GeometryBuffer.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_GUIRender.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_GUIRenderCache.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_HardTextureTarget.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_RenderingSurface.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_RenderingWindow.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_RenderQueue.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_RenderTarget.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_ScreenElements.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_ScreenElementsManager.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_ScreenRender.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_SoftTextureTarget.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_TextureTarget.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\RS_ViewPortTarget.cpp">
+      <Filter>UISys\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\UI_Cursor.cpp">
+      <Filter>UISys\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\UI_GameUI.cpp">
+      <Filter>UISys\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\UI_UIBaseRTTI.cpp">
+      <Filter>UISys\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_ControlType.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIBubble.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIButton.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIChangeBar.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUICheck.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIComboBox.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIConsole.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIContainer.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIDialog.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIDragContainer.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIDragItem.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIKeyEdit.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUILabel.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUILabelList.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUILineEdit.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIListBase.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIMenu.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIMessageBox.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIMultiEdit.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIPath.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIPicker.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIPicLabel.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIProgressBar.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIRadarMap.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIRichEdit.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIRichText.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIScreen.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIScrollBar.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIShaper.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUISpin.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUISwitcher.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUITabList.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUITabWin.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUITextList.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUITooltip.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUITreeCtrl.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIWidgetBox.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_CUIWidgetList.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CL_RichText.cpp">
+      <Filter>UISys\UI\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\WT_RootWidget.cpp">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\WT_Widget.cpp">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\WT_WidgetFactory.cpp">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\WT_WidgetManager.cpp">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CR_HelpFunction.cpp">
+      <Filter>UISys\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CR_UICommon.cpp">
+      <Filter>UISys\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\CR_UIType.cpp">
+      <Filter>UISys\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_AnimationFont.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_BitmapFont.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_Font.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_FontFace.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_FontFaceManager.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_FontManager.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_FontXmlHandler.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\UISys\FT_FreeTypeFont.cpp">
+      <Filter>UISys\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Logic\LC_TooltipManager.cpp">
+      <Filter>ToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Data\GD_ClientActorModel.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Data\GD_ClientAsyncModelManager.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Data\GD_ClientChestModel.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Data\GD_ClientSceneModel.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Data\GD_LoginSceneManager.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Data\GD_LoginSceneModel.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Path\PF_ClientPathManager.cpp">
+      <Filter>Path</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\Skill\SK_ClientSkillEventManager.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\Scene\SE_SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_SceneTerrainInfo.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_SceneVisibleChunkSelector.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldChunk.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldChunkCluster.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldMap.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_SceneWorldTile.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_Terraincallback.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_WorldChunkGeometryDataManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Scene\SE_WorldMiniMap.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Message\MG_MessageBase.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Message\MG_MessageCenter.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Message\MG_MessageDefine.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Message\MG_MessageHandlerInterface.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Message\MG_MessageQueue.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Timer\TM_ClientTimeManager.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Input\IP_InputManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_ClientFxRenderClickView.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_ClientRenderStep.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_GrassRenderClick.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_LoginSceneRenderView.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_MiniMapRenderStep.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_RenderManager.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_SceneRenderView.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_UERenderClick.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_UiEffectRenderView.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_UISysRenderView.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Render\RG_WaterReflectRenderView.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_AnimCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_BaseCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_CameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_DraconisCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_FreeCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_LockCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_OrthoCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Camera\CA_SelCharCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Base\BS_ClientMaterialManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Base\BS_ClientModelContentManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Base\BS_ClientWaterMeshManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\BackLoading\BL_AsyncOperation.h">
+      <Filter>BackLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\BackLoading\BL_AsyncOperationManager.h">
+      <Filter>BackLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientControllerFactory.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientStateFactory.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStageMachine.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_CHASE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_DEAD.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_DIZZ.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_IDLE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_RETREAT.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_SLEEP.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterState_WANDER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_IDLE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_TALK.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCState_WANDER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_DEAD.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_DIZZ.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_ONVEHICLE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_RUN.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_SLEEP.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientPlayerState_STAND.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientVehicleState_IDLE.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientVehicleState_RUN.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientVehicleState_WANDER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_CREATE_CHARACTER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_GAME.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_LOADING.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_LOGIN.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_QUIT.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_SEL_CHARACTER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_SEL_SERVER.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_GameStage_START.h">
+      <Filter>StateMachine\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientGamePlayerController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientGameVehicleController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientMonsterController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNetPlayerController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNetVehicleController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\StateMachine\SM_ClientNPCController.h">
+      <Filter>StateMachine\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_ClientNetManager.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_ClientSessionFactory.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_ClientSessionManager.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Debugger2ClientSession.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Game2ClientSession.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Helper.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Login2ClientSession.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Profile2ClientSession.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\NetWork\NW_Signature2ClientSession.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\FX\FX_ClientFxManager.h">
+      <Filter>FX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\ClientScriptPCH.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ClientDebugInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ClientScriptInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Script\SC_ClientSkillInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Debug\DG_DebugManager.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientLogicManager.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientActorBulletMap.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientGamePlayer.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientGamePlayerManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientGameVehicle.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientGameVehicleManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientMonster.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientMonsterManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientNetPlayer.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientNetPlayerManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientNetVehicle.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientNetVehicleManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientNPC.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientNPCManager.h">
+      <Filter>Logic\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientMap.h">
+      <Filter>Logic\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientSector.h">
+      <Filter>Logic\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientWorldManager.h">
+      <Filter>Logic\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientItem.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientItemEnhance.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientItemFactory.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientShortcutBar.h">
+      <Filter>Logic\ShortcutBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientChest.h">
+      <Filter>Logic\Chest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientChestManager.h">
+      <Filter>Logic\Chest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_PlayerFlopManager.h">
+      <Filter>Logic\Chest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientBullet.h">
+      <Filter>Logic\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_AcrossMapPath.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_MapManager.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_MiniMap.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ObjectDescription.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_PathDesc.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_RadarMap.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_TownMap.h">
+      <Filter>Logic\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientPlayerGroup.h">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientPlayerGroupManager.h">
+      <Filter>Logic\PlayerGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ShopCityClient.h">
+      <Filter>Logic\ShopCity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientMainTask.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientSubTask.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientTaskManager.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientTaskMap.h">
+      <Filter>Logic\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientDialogInfo.h">
+      <Filter>Logic\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientDialogManager.h">
+      <Filter>Logic\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientMailManager.h">
+      <Filter>Logic\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_MailAsset.h">
+      <Filter>Logic\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_MailStruct.h">
+      <Filter>Logic\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_GameEventHandler.h">
+      <Filter>Logic\GameEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_ClientFriendAsset.h">
+      <Filter>Logic\Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ClientGameInfoPrinter.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ClientGlobalSettings.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ClientLogManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ClientLogRemoteConsole.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_DebugCommandParser.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_LogicInfoMessage.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Utility\UT_ThreadPool.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Handler\HL_FromDebugConsole.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Handler\HL_FromGameServer.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Handler\HL_FromLoginServer.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\InteractModel\IM_Manager.h">
+      <Filter>InteractModel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_Get.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_HPCost.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_MonsterBlood.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_PlayerBlood.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_PlayerName.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_RenderManager.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_ResourceManager.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_SingleTexture.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_Task.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectBase.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectHead.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectManager.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UIEffect\UE_UiEffectPoolBase.h">
+      <Filter>UIEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Text\TT_TextManager.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\AudioSystem\AS_ClientSoundManager.h">
+      <Filter>AudioSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\CSV\CF_ClientCsvManager.h">
+      <Filter>CSV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UI\UI_AvatarTexture.h">
+      <Filter>UISys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UI\UI_UIManager.h">
+      <Filter>UISys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\UIRenderClick.h">
+      <Filter>UISys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_HandleMgr.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_Kernel.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_KeyTranslate.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_Script.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_ScriptUtils.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_Singlet.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_TxtCtrlr.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_TxtRecordset.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CM_Variant.h">
+      <Filter>UISys\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_AnimationImage.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_Image.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_ImageArray.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_ImageBase.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_ImageFileHandler.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_ImageSet.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_ImageSetManager.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\IG_RadarMapImageManager.h">
+      <Filter>UISys\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\UI_SysImpl.h">
+      <Filter>UISys\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\Lua_C++Register.h">
+      <Filter>UISys\Lua_bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\Lua_TypeDefine.h">
+      <Filter>UISys\Lua_bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RegFucn.h">
+      <Filter>UISys\Lua_bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_GeometryBuffer.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_GUIRender.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_GUIRenderCache.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_HardTextureTarget.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_RenderingSurface.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_RenderingWindow.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_RenderQueue.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_RenderTarget.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_ScreenElements.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_ScreenElementsManager.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_ScreenRender.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_SoftTextureTarget.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_TextureTarget.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\RS_ViewPortTarget.h">
+      <Filter>UISys\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\UI_Cursor.h">
+      <Filter>UISys\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\UI_GameUI.h">
+      <Filter>UISys\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\UI_UIBaseRTTI.h">
+      <Filter>UISys\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\UIControlInclude.h">
+      <Filter>UISys\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_ControlType.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIBubble.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIButton.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIChangeBar.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUICheck.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIComboBox.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIConsole.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIContainer.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIDialog.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIDragContainer.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIDragItem.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIKeyEdit.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUILabel.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUILabelList.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUILineEdit.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIListBase.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIMenu.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIMessageBox.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIMultiEdit.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIPath.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIPicker.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIPicLabel.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIProgressBar.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIRadarMap.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIRichEdit.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIRichText.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIScreen.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIScrollbar.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIShaper.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUISpin.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUISwitcher.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUITabList.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUITabWin.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUITextList.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUITooltip.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUITreeCtrl.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIWidgetBox.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_CUIWidgetList.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CL_RichText.h">
+      <Filter>UISys\UI\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\WT_IWgtData.h">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\WT_RootWidget.h">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\WT_Widget.h">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\WT_WidgetFactory.h">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\WT_WidgetManager.h">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\WT_WidgetType.h">
+      <Filter>UISys\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CR_HelpFunction.h">
+      <Filter>UISys\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CR_UICommon.h">
+      <Filter>UISys\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\CR_UIType.h">
+      <Filter>UISys\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_AnimationFont.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_BitmapFont.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_Font.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_FontFace.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_FontFaceManager.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_FontGlyph.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_FontManager.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_FontXmlHandler.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\UISys\FT_FreeTypeFont.h">
+      <Filter>UISys\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Logic\LC_TooltipManager.h">
+      <Filter>ToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Data\GD_ClientActorModel.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Data\GD_ClientAsyncModelManager.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Data\GD_ClientChestModel.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Data\GD_ClientSceneModel.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Data\GD_LoginSceneManager.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Data\GD_LoginSceneModel.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Path\PF_ClientPathManager.h">
+      <Filter>Path</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Skill\SK_ClientSkillEventManager.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+	<ClInclude Include="..\Src\Resource\ClientResDefine.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\Resource\ClientTextDefine.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+	<ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+	<ClInclude Include="..\Src\ClientApp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ClientDefine.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\ClientPCH.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\DllMain.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+	<ClInclude Include="..\Src\YunYing\YunYingPlatform.h">
+      <Filter>YunYing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Src\YunYing\YunYingMgr.h">
+      <Filter>YunYing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="logoSmall.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Src\Logic\LC_MapManager.inl">
+      <Filter>Logic\Map</Filter>
+    </None>
+    <None Include="..\Src\Logic\LC_MiniMap.inl">
+      <Filter>Logic\Map</Filter>
+    </None>
+    <None Include="..\Src\Logic\LC_TownMap.inl">
+      <Filter>Logic\Map</Filter>
+    </None>
+    <None Include="..\Src\Logic\LC_ShopCityClient.inl">
+      <Filter>Logic\ShopCity</Filter>
+    </None>
+    <None Include="..\Src\Logic\LC_MailAsset.inl">
+      <Filter>Logic\Mail</Filter>
+    </None>
+    <None Include="..\Src\Logic\LC_ClientFriendAsset.inl">
+      <Filter>Logic\Friend</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_ChatProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_ChestProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_DuelProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_FriendProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_FrobidProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_GameProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_GroupProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_LoginProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_MailProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_ShopCityProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_SkillProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_SyncProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_TaskProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_TradeProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\Handler\HL_FromGameServer_VehicleProtocol.inl">
+      <Filter>Handler\ProtocolHandle</Filter>
+    </None>
+    <None Include="..\Src\UIEffect\UE_UiEffectBase.inl">
+      <Filter>UIEffect</Filter>
+    </None>
+    <None Include="..\Src\UISys\WT_Widget.inl">
+      <Filter>UISys\UI\Widget</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>Logic</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Src\Script\SC_ClientScriptInterface.txt">
+      <Filter>Script</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Src\UISys\CL_UIInterface.txt">
+      <Filter>UISys\Lua_bind</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

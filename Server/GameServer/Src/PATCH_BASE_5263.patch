@@ -1,0 +1,138 @@
+Index: Logic/LC_ServerPlayer.cpp
+===================================================================
+--- Logic/LC_ServerPlayer.cpp	(revision 5276)
++++ Logic/LC_ServerPlayer.cpp	(working copy)
+@@ -10804,7 +10804,6 @@
+ 	return true;
+ }
+ 
+-
+ int LC_ServerPlayer::GetBuddyRelativeIndex( int nBuddyIndex )
+ {
+ 	int nResult = eRelativeIndex_Error;
+@@ -11399,6 +11398,19 @@
+ 	return true;
+ }
+ 
++object_id_type LC_ServerPlayer::GetLogicTargetID()
++{
++	return m_nLogicTargetID;
++}
++
++void LC_ServerPlayer::SetLogicTargetID( object_id_type nTargetID, bool bForce  )
++{
++	if (m_nLogicTargetID != INVALID_ACTOR_ID && bForce == false)
++		return;
++
++	m_nLogicTargetID = nTargetID;
++}
++
+ int LC_ServerPlayer::CastSkill( uint32_t nSkillId, float fCurTime, int32_t nItemID, object_id_type nTargetId,  int32_t nCurX, int32_t nCurY, int32_t nLockX, int32_t nLockY, int16_t nForwardAngle, bool bServerCast )
+ {
+ 	SK_SkillExecute* pkSkill = SK_Factory::GetSingletonPtr()->RequestSkillExcute(nSkillId);
+@@ -11426,7 +11438,7 @@
+ 	int nHatredCount = m_kHatredList.GetHatredCount();
+ 	if (!bServerCast)
+ 	{
+-		object_id_type nOrigTargetId = GetDefaultTargetID();
++		object_id_type nOrigTargetId = GetLogicTargetID();
+ 		if (nOrigTargetId == INVALID_ACTOR_ID && nTargetId == INVALID_ACTOR_ID)
+ 		{
+ 			if (nHatredCount > 0)
+@@ -11438,6 +11450,7 @@
+ 			}
+ 		}
+ 		SetDefaultTargetID( nTargetId );
++		SetLogicTargetID(nTargetId);
+ 	}
+ 
+ 	if (nRetCode)
+@@ -11824,6 +11837,7 @@
+ 	m_bBuddyAIParam_ForceFollow = false;
+ 	m_eBuddyActionType = eBuddyActionType_Init;
+ 	m_nLastTargetDistance = 0;
++	m_nLogicTargetID = INVALID_ACTOR_ID;
+ 	return true;
+ }
+ 
+@@ -12595,7 +12609,7 @@
+ 	{
+ 		object_id_type nTargetId = INVALID_ACTOR_ID;
+ 		int nHatredCount = m_kHatredList.GetHatredCount();
+-		object_id_type nOrigTargetId = GetDefaultTargetID();
++		object_id_type nOrigTargetId = GetLogicTargetID();
+ 		if (nOrigTargetId == INVALID_ACTOR_ID)
+ 		{
+ 			if (nHatredCount > 0)
+@@ -12605,7 +12619,8 @@
+ 				if (NULL != pkHatredEntry)
+ 				{
+ 					nTargetId = pkHatredEntry->GetTargetID();
+-					SetDefaultTargetID( nTargetId );
++					//SetDefaultTargetID( nTargetId );
++					SetLogicTargetID(nTargetId);
+ 					SetLogicCombatFlag(true);
+ 				}
+ 			}
+Index: Logic/LC_ServerPlayer.h
+===================================================================
+--- Logic/LC_ServerPlayer.h	(revision 5276)
++++ Logic/LC_ServerPlayer.h	(working copy)
+@@ -1684,8 +1684,9 @@
+ public:
+ 	// ActiveBuddy请求的子弹
+ 	bool ReqShotBullet(const MG_REQ_Bullet_Shot & reqMsg);
+-	
+ 
++	object_id_type GetLogicTargetID();
++	void SetLogicTargetID( object_id_type nTargetID, bool bForce = false );
+ private:
+ 	int m_nBuddyActionType;
+ 	// Buddy data define section.
+@@ -1725,6 +1726,7 @@
+ 	bool m_bBuddyAIParam_ForceFollow;
+ 	BUDDY_ACTION_TYPE m_eBuddyActionType;
+ 	int32_t m_nLastTargetDistance;
++	object_id_type m_nLogicTargetID;
+ // Buddy design
+ public:
+ 	void InitDataAsBuddy(uint32_t nBuddyTemplateId, bool bCreation );
+Index: Skill/SK_ServerSkillEventManager.cpp
+===================================================================
+--- Skill/SK_ServerSkillEventManager.cpp	(revision 5276)
++++ Skill/SK_ServerSkillEventManager.cpp	(working copy)
+@@ -615,6 +615,12 @@
+ 
+ 	_notifyState(pkSrcActor, pkDstActor, pkEvent);
+ 
++	if (pkSrcActor->GetType() == LOT_PLAYER)
++	{
++		LC_ServerPlayer* pSrcServerPlayer = (LC_ServerPlayer*)pkSrcActor;
++		pSrcServerPlayer->SetLogicTargetID(lDstActorID);
++	}
++
+ 	/*
+ 	*计算最终伤害
+ 	*/
+Index: StateMachine/SM_ServerBuddyController.cpp
+===================================================================
+--- StateMachine/SM_ServerBuddyController.cpp	(revision 5276)
++++ StateMachine/SM_ServerBuddyController.cpp	(working copy)
+@@ -816,6 +816,7 @@
+ 	//if (lSelectTarget == 0)
+ 	//	return false;
+ 	object_id_type lSelectTarget = pkPlayer->GetDefaultTargetID();//nTargetId;//pkPlayer->GetFollowTargetObjectId();
++	//object_id_type lSelectTarget = pkPlayer->GetLogicTargetID();
+ 	if (!IS_PLAYER_CLASS_ID(lSelectTarget) && !IS_NPC_ID(lSelectTarget))
+ 	{
+ 		return false;
+@@ -896,7 +897,8 @@
+ 	}
+ 
+ 	// for ai debug
+-	object_id_type lSelectTargetID = pCurrentPlayer->GetDefaultTargetID();
++	//object_id_type lSelectTargetID = pCurrentPlayer->GetDefaultTargetID();
++	object_id_type lSelectTargetID = pCurrentPlayer->GetLogicTargetID();
+ 	if (IS_PLAYER_CLASS_ID(lSelectTargetID) || IS_NPC_ID(lSelectTargetID))
+ 	{
+ 		pkPlayer->SetDefaultTargetID(lSelectTargetID);

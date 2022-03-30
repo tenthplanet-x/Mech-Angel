@@ -1,0 +1,18 @@
+EXPORT_CLASS UI_LCShopping:UI_LogicClass
+void_F_Purchase
+int_F_BuyGoods
+void_F_ShowContextMenu
+void_F_SetItem
+int_F_ShowTooltip
+void_F_UpdateGoodsNum
+int_F_BuyGoodsFromShop
+void_F_GoToPrePage
+void_F_GoToNextPage
+int_F_OnGoodsRClick
+int_F_OnGoodsClick
+int_F_OnGoodsDraggingMove
+void_F_StartBulkBuying
+void_F_BulkBuying
+int_F_OnBuyBackClick
+int_F_OnBuyBackRClick
+EXPORT_END
