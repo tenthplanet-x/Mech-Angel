@@ -158,7 +158,6 @@ bool LC_ServerMapLogic_AutoSpawnPlay::Update(float fCurrentTime, float fDeltaTim
 				else
 				{
 					GfxWriteLog(LOG_ERROR_FILELINE, LOG_SWITCH_ERROR, "Check AutoSpawn [%d] miss a npc [%d]!", IterBe->first, *it);
-					rkAutoSpawnData._objectLogicIDs.erase(it++);
 				}
 			}
 			rkAutoSpawnData._lastUpdateTime = (int32_t)fCurrentTime;
@@ -193,7 +192,7 @@ void LC_ServerMapLogic_AutoSpawnPlay::SetFirstTime(int mintime,int maxtime)
 void LC_ServerMapLogic_AutoSpawnPlay::SetIntervalTime(int mintime,int maxtime)
 {
 	m_IntervalSpawnTimeMin=mintime;
-	m_IntervalSpawnTimeMax=maxtime;
+
 }
 
 void LC_ServerMapLogic_AutoSpawnPlay::ActiveSpawnPoint(int lSpawnPointID, object_id_type id)
@@ -209,7 +208,7 @@ void LC_ServerMapLogic_AutoSpawnPlay::ActiveSpawnPoint(int lSpawnPointID, object
 
 	if (rkSpawnData._objectLogicIDs.empty())
 	{
-		rkSpawnData._bWaitActive	= true;
+	
 		rkSpawnData._lastActiveTime = (int)GET_PROCESS_TIME;
 		rkSpawnData._lastUpdateTime = rkSpawnData._lastActiveTime;
 		rkSpawnData._objectLogicIDs.clear();;

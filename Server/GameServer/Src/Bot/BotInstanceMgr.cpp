@@ -82,8 +82,6 @@ int BotInstanceMgr::Activate()
 	if ( GetCount() > 0 )
 		return false;
 
-	ActivateDefaultBot();
-
 	return true;
 }
 
@@ -156,10 +154,7 @@ int BotInstanceMgr::ActivateBot(int32_t nBotResId, bool bForce)
 		Enable(currentTime);
 
 		LC_ServerPlayer* pkOwnerPlayer = GetOwnerPlayer();
-		if(NULL != pkOwnerPlayer)
-		{
-			pkOwnerPlayer->EnableNewVipBot(currentTime);
-		}
+
 	}
 
 	result.m_Data.m_nResId = pInstance->GetTemplateId();
@@ -240,10 +235,6 @@ int BotInstanceMgr::CheckUpdateBonus( uint32_t nBeginTime )
 			return true;
 	}
 
-	int32_t nTalentBonusTimer = 0;
-	nTalentBonusTimer = m_nTimer_Talent - m_nBeginTime;
-	if ( nTalentBonusTimer + GetGlobalSetting.nBotBonusTimer_Talent <= maxBotTime )
-		return true;
 
 	return false;
 }

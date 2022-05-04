@@ -66,16 +66,6 @@ int32_t BuddyChain::Add( int16_t nIndex, int32_t nBuddyId )
 		return RE_BUDDY_CHAIN_ERROR_INVALID_POS_INDEX;
 	}
 
-	if ( m_nBuddyIds[nIndex] != INVALID_ACTOR_ID )
-	{
-		return RE_BUDDY_CHAIN_ERROR_INVALID_SLOT;
-	}
-
-	if (CheckData(nBuddyId))
-	{
-		return RE_BUDDY_CHAIN_ERROR_EXIST_BUDDY;
-	}
-
 	m_nBuddyIds[nIndex] = nBuddyId;
 
 	return RE_SUCCESS;
@@ -92,10 +82,6 @@ int32_t BuddyChain::Del( int16_t nIndex, int32_t& nOrigBuddyId )
 	{
 		return RE_BUDDY_CHAIN_ERROR_INVALID_SLOT;
 	}
-
-	nOrigBuddyId = m_nBuddyIds[nIndex];
-	m_nBuddyIds[nIndex] = INVALID_ACTOR_ID;
-
 	return RE_SUCCESS;
 }
 
@@ -123,11 +109,6 @@ int32_t BuddyChain::Switch( int16_t nIndex, int32_t nBuddyId, int32_t& nOrigBudd
 	if ( m_nBuddyIds[nIndex] == INVALID_ACTOR_ID )
 	{
 		return RE_BUDDY_CHAIN_ERROR_INVALID_SLOT;
-	}
-
-	if (CheckData(nBuddyId))
-	{
-		return RE_BUDDY_CHAIN_ERROR_EXIST_BUDDY;
 	}
 
 	nOrigBuddyId = m_nBuddyIds[nIndex];
