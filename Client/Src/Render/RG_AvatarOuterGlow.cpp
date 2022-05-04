@@ -293,6 +293,23 @@ void RG_AvatarOuterGlow::DrawFinalToDisplay()
 	m_fCullTime += m_kOutputBuffer.GetCullTime();
 	m_fRenderTime += m_kOutputBuffer.GetRenderTime();
 }
+
+
+void RG_AvatarOuterGlow::CleanupRenderedTextures()
+{
+	CleanupAuxBuffer(m_kOutputBuffer);
+
+	for(int i = 0; i < NUM_OUTER_GLOW_TEXTURES; i++)
+		CleanupAuxBuffer(m_aspBlooms[i]);
+
+	CleanupAuxBuffer(m_kHDRSceneScaled);
+
+	m_kHDRScene.m_pkTex = NULL;
+	CleanupAuxBuffer(m_kHDRScene);
+
+	m_kHDRSceneOriginal.m_pkTex = NULL;
+	CleanupAuxBuffer(m_kHDRSceneOriginal);
+}
 //---------------------------------------------------------------------------
 void RG_AvatarOuterGlow::PerformRendering()
 {
@@ -329,3 +346,33 @@ void RG_AvatarOuterGlow::PerformRendering()
 
 	m_kHDRSceneOriginal.m_pkTex->Update();
 }
+
+
+
+//---------------------------------------------------------------------------
+bool RG_AvatarOuterGlow::CreateRenderPass()
+{
+	bool bSuccess = CreateRenderedTextures();
+	if (!bSuccess)
+		return false;
+
+	////////////////////////////
+	//// downsampled
+	NiMaterial* spDownScale4x4Material = NiSingleShaderMaterial::Create("AvatarOuterGlow_DownScale2x2");
+	NIASSERT(spDownScale4x4Material);
+
+	////////////////////////////
+	// Bloom
+	NiMaterialPtr spBloomMaterial = NiSingleShaderMaterial::Create("AvatarOuterGlow_HDRScene_Bloom");
+	NIASSERT(spBloomMaterial);
+
+	// Bloom Pass for Horizontal
+	CreateFullScreenQuad(m_kHDRSceneScaled, false, 
+		m_aspBlooms[1], false, spBloomMaterial);
+	// Bloom Pass for Vertical
+	CreateFullScreenQuad(m_aspBlooms[1], false, 
+		m_aspBlooms[0], false, spBloomMaterial);
+
+	return true;
+}
+

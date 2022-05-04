@@ -235,6 +235,13 @@ void TT_ChannelTextDataManager::ClearTabText(int iTabType)
 	IterFind->second->m_kList.clear();
 	IterFind->second->m_bOrderDirtyFlag = true;
 }
+
+int TT_TextElementContainer::GetTextElementCount()
+{
+	return m_kTextElementList.size();
+}
+
+
 //--------------------------------------------------------------
 bool TT_ChannelTextDataManager::GetAndClearTabOderDirtyFlag(int iTabType)
 {
@@ -416,6 +423,17 @@ bool TT_TextManager::RecvMessage(MG_MessageBase& rkMessage)
 	END_MESSAGE_HANDLE
 	return true;
 }
+
+int TT_TextManager::_logErrFunc(const char* sMsg)
+{
+	if ( GetGlobalSetting.GetnGMLevel() > 0 )
+	{
+		SendLogicInfoMessage(RE_LOG_ERROR_MESSAGE, CodeConvert::MbsToUtf8_fast(sMsg));
+	}
+
+	return 1;
+}
+
 //--------------------------------------------------------------
 void TT_TextManager::AddTextElement(TT_TextElement& rkTextElement)
 {
@@ -729,6 +747,7 @@ void TT_TextManager::AddTextElement(TT_TextElement& rkTextElement)
 	
 		m_kChannel_Friend.AddTextElementIndexToTab(GENERAL_CHANNEL_TAB_TYPE_NORMAL,iTextIndexInChannel);
 	}
+
 
 	//无模式窗口
 	if(pkData->_bChannelMessagePrompt)
